@@ -1,6 +1,7 @@
 # Sales — The Revenue Operating System
 
-> Prospecting, pipeline management, deal coaching, call prep, outreach, and negotiation — standalone or supercharged with your CRM and sales tools.
+> **A Claude Code & CoWork Plugin**
+> Prospecting, pipeline management, and deal coaching — standalone or supercharged with your CRM.
 
 Sales is a Claude Code / Cowork plugin built for solopreneurs and small B2B teams. It combines proactive AI agents with deep skill libraries to act as a virtual Sales Manager, Deal Coach, and RevOps function in one.
 

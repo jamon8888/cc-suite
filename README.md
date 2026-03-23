@@ -1,28 +1,51 @@
-# CC Suite — The Ultimate Solopreneur OS
+# CC Suite — The Ultimate Claude Code & CoWork Plugin Marketplace
 
-A collection of elite Claude plugins and autonomous agents designed to run your entire business from a single chat interface.
+> Elevate your Claude Code and Claude CoWork experience with a professional-grade suite of autonomous agents and strategic tools.
 
-The CC Suite combines product development, sales intelligence, financial tracking, and decision hygiene into one coherent system.
+The **CC Suite** is a curated collection of plugins designed for solopreneurs, founders, and boutique agencies. It turns Claude into a full-service business partner that handles everything from product validation to technical sales and decision architecture.
 
-## Included Plugins
+---
 
-| Plugin | Purpose | Key Commands |
-|--------|---------|--------------|
-| **[Solo](./solo/README.md)** | Core Business OS | `/solo:build`, `/solo:invoice` |
-| **[Sales](./sales/README.md)** | Revenue OS | `/sales:prospect`, `/sales:pipeline` |
-| **[Sentinel](./sentinel/README.md)** | Decision Hygiene | `/sentinel`, `/sentinel-diverge` |
-| **[Copywriter](./copywriter/README.md)** | Content Engine | `/copywriter:blog`, `/copywriter:post` |
-| **[Comms Strategy](./comms-strategy/README.md)** | Strategic Positioning | `/comms:strategy`, `/comms:pitch` |
+## 🛒 Marketplace & Quick Install
 
-## Getting Started
+You can install any plugin from this suite directly into your **Claude Code** or **Claude CoWork** environment.
 
-1.  **Initialize Solo**: Run `/solo:start` to set up your business profile and Voice DNA.
-2.  **Configure Sales**: Run `/sales:start` to define your ICP and selling methodology.
-3.  **Check Connections**: Run `/solo:check-connections` to see active MCP integrations.
+### Installation via Marketplace
+To install a plugin locally, use the following command from the root of this repository:
 
-## Architecture
+```bash
+# General Syntax
+claude plugin add [path-to-plugin]
 
-The suite follows the **PARA (Projects, Areas, Resources, Archives)** methodology for data organization, ensuring that all artifacts, research, and client data are structured and retrievable.
+# Examples
+claude plugin add ./solo        # Installs the Solopreneur OS
+claude plugin add ./sales       # Installs the Revenue OS
+claude plugin add ./sentinel    # Installs Decision Hygiene
+```
+
+---
+
+## 📦 Included Plugins
+
+| Plugin | Version | Core Capability |
+|--------|---------|-----------------|
+| **[Solo](./solo/README.md)** | `4.0.0` | **Business OS**: Client management, PRDs, and TVA-compliant invoicing. |
+| **[Sales](./sales/README.md)** | `3.0.0` | **Revenue OS**: Account research, MEDDIC coaching, and pipeline health. |
+| **[Sentinel](./sentinel/README.md)** | `8.4.0` | **Decision Hygiene**: MAP scoring and pre-mortems for high-stakes choices. |
+| **[Copywriter](./copywriter/README.md)** | `2.0.0` | **Content Engine**: High-conversion copy synced with your Voice DNA. |
+| **[Comms Strategy](./comms-strategy/README.md)** | `2.0.1` | **Strategy OS**: Brand positioning and behavioral-science campaigns. |
+
+---
+
+## 🚀 Getting Started
+
+1.  **Clone the Suite**:
+    `git clone https://github.com/jamon8888/cc-suite.git`
+2.  **Pick Your Plugin**: Navigate to the directory or install via the `marketplace.json` manifest.
+3.  **Run Initialization**: Use `/solo:start` or `/sales:start` once installed to configure your specific business identity.
+
+## 🏗️ Architecture
+All plugins are built on the **PARA methodology** (Projects, Areas, Resources, Archives) for consistent file organization across your entire business brain.
 
 ---
 *Designed for builders, by builders.*

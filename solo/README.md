@@ -1,6 +1,7 @@
 # Solo — The Solopreneur OS
 
-> Run your entire business from a single Claude plugin.
+> **A Claude Code & CoWork Plugin**
+> Run your entire business from a single Claude conversation.
 
 Solo is a Claude Code plugin for solopreneurs, freelancers, and indie builders. It combines client management, product development, and financial tracking into one coherent system — with background agents that handle routine work automatically. Pair with **copywriter** for content creation.
 

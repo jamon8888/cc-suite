@@ -1,5 +1,7 @@
 # Sentinel v8 - Decision Hygiene Protocol
 
+> **A Claude Code & CoWork Plugin**
+
 ## What it does
 
 Sentinel forces structured thinking when you're deciding under pressure.

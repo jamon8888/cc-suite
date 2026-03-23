@@ -1,0 +1,47 @@
+{
+  "name": "CC Suite Marketplace",
+  "description": "A collection of premium Claude Code and Claude CoWork plugins for solopreneurs, founders, and strategic thinkers.",
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "id": "solo",
+      "name": "Solo",
+      "description": "The Solopreneur OS. Client management, product pipeline, and financial tracking.",
+      "path": "./solo",
+      "version": "4.0.0",
+      "tags": ["business", "revenue", "productivity"]
+    },
+    {
+      "id": "sales",
+      "name": "Sales",
+      "description": "The Revenue OS. Prospecting, pipeline health, and deal coaching.",
+      "path": "./sales",
+      "version": "3.0.0",
+      "tags": ["sales", "crm", "outreach"]
+    },
+    {
+      "id": "sentinel",
+      "name": "Sentinel",
+      "description": "Decision Hygiene Protocol. High-stakes decision structure and bias mitigation.",
+      "path": "./sentinel",
+      "version": "8.4.0",
+      "tags": ["strategy", "decisions", "risk"]
+    },
+    {
+      "id": "copywriter",
+      "name": "Copywriter",
+      "description": "Content Creation Studio. Blog, newsletter, and LinkedIn in your Voice DNA.",
+      "path": "./copywriter",
+      "version": "2.0.0",
+      "tags": ["content", "marketing", "copywriting"]
+    },
+    {
+      "id": "comms-strategy",
+      "name": "Comms Strategy",
+      "description": "Strategic Planning OS for brand and integrated communications.",
+      "path": "./comms-strategy",
+      "version": "2.0.1",
+      "tags": ["comms", "strategy", "pr"]
+    }
+  ]
+}

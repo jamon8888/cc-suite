@@ -1,6 +1,7 @@
-# Comms Strategy Plugin
+# Comms Strategy — The Strategic Planning OS
 
-**Strategic planning OS for brand and integrated communications agencies.**
+> **A Claude Code & CoWork Plugin**
+ for brand and integrated communications agencies.**
 
 From client brief to campaign architecture — audience intelligence, messaging, media landscape, measurement, crisis planning, and new business pitching. Bilingual FR/EN. Runs fully standalone, no API keys required.
 

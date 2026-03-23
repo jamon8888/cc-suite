@@ -1,4 +1,6 @@
-# Copywriter — The Copywriting Studio
+# Copywriter — The Content Studio
+
+> **A Claude Code & CoWork Plugin**
 
 > Blog posts, newsletters, LinkedIn, sales copy — all in your Voice DNA.
 
