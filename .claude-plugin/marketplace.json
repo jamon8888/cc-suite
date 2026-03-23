@@ -1,0 +1,80 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "CC Suite Marketplace",
+  "description": "Unified marketplace for the CC Suite — premium Claude Code & CoWork plugins.",
+  "owner": {
+    "name": "Antigravity Factory"
+  },
+  "plugins": [
+    {
+      "name": "Solo",
+      "description": "The Solopreneur OS. Base business identity, PARA data management, and financial office.",
+      "category": "productivity",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/jamon8888/cc-suite",
+        "path": "solo"
+      },
+      "homepage": "https://github.com/jamon8888/cc-suite/tree/master/solo",
+      "author": {
+        "name": "Antigravity Factory"
+      }
+    },
+    {
+      "name": "Sales",
+      "description": "The Revenue OS. Technical sales pipeline, MEDDIC coaching, and outbound automation.",
+      "category": "sales",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/jamon8888/cc-suite",
+        "path": "sales"
+      },
+      "homepage": "https://github.com/jamon8888/cc-suite/tree/master/sales",
+      "author": {
+        "name": "Antigravity Factory"
+      }
+    },
+    {
+      "name": "Sentinel",
+      "description": "Decision Hygiene Protocol. Structural thinking and choice architecture to mitigate bias.",
+      "category": "strategy",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/jamon8888/cc-suite",
+        "path": "sentinel"
+      },
+      "homepage": "https://github.com/jamon8888/cc-suite/tree/master/sentinel",
+      "author": {
+        "name": "Manuel"
+      }
+    },
+    {
+      "name": "Copywriter",
+      "description": "Content Creation Studio. High-conversion blogging, newsletters, and social media.",
+      "category": "marketing",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/jamon8888/cc-suite",
+        "path": "copywriter"
+      },
+      "homepage": "https://github.com/jamon8888/cc-suite/tree/master/copywriter",
+      "author": {
+        "name": "Antigravity Factory"
+      }
+    },
+    {
+      "name": "Comms Strategy",
+      "description": "Strategic Planning OS. Campaign hooks, brand positioning, and messaging protocols.",
+      "category": "marketing",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/jamon8888/cc-suite",
+        "path": "comms-strategy"
+      },
+      "homepage": "https://github.com/jamon8888/cc-suite/tree/master/comms-strategy",
+      "author": {
+        "name": "NMarchitecte"
+      }
+    }
+  ]
+}

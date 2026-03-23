@@ -11,7 +11,7 @@ The **CC Suite** is a curated collection of plugins designed for solopreneurs, f
 You can install any plugin from this suite directly into your **Claude Code** or **Claude CoWork** environment.
 
 ### Installation via Marketplace
-To install a plugin locally, use the following command from the root of this repository:
+To install a plugin locally from this workspace, use the following from your terminal:
 
 ```bash
 # General Syntax
@@ -19,9 +19,9 @@ claude plugin add [path-to-plugin]
 
 # Examples
 claude plugin add ./solo        # Installs the Solopreneur OS
-claude plugin add ./sales       # Installs the Revenue OS
-claude plugin add ./sentinel    # Installs Decision Hygiene
 ```
+
+This repository also includes an official **Marketplace Manifest** at `.claude-plugin/marketplace.json` for discovery and distribution.
 
 ---
 
