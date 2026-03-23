@@ -1,0 +1,39 @@
+{
+  "platform": "cowork",
+  "use_cases": [
+    { "id": "uc-001", "description": "Brief analysis with Strategic Platform output", "expected_behavior": "Produces business challenge, comms challenge, audience tensions, core insight, idea territory, no slop phrases" },
+    { "id": "uc-002", "description": "Audience intelligence with segments and tensions", "expected_behavior": "Identifies 2+ segments, includes tensions/pain points, media habits, decision drivers, psychographics" },
+    { "id": "uc-003", "description": "Message architecture for B2B client", "expected_behavior": "Primary claim, 3+ supporting pillars, proof points, differentiation, persona-tailored" },
+    { "id": "uc-004", "description": "Campaign strategy with PESO model", "expected_behavior": "Campaign concept, PESO framework, phased timeline, budget allocation, success metrics" },
+    { "id": "uc-005", "description": "New business pitch structure", "expected_behavior": "Situation analysis, strategic challenges, recommendation, deck structure, differentiators" },
+    { "id": "uc-006", "description": "Crisis communication plan", "expected_behavior": "5+ crisis scenarios, holding statements, stakeholder mapping, escalation protocols, team structure" },
+    { "id": "uc-007", "description": "Measurement framework 4-level architecture", "expected_behavior": "4-level framework (outputs/outcomes/impact/ROI), specific KPIs, benchmarks, tools, dashboard template" },
+    { "id": "uc-008", "description": "Competitive communications landscape mapping", "expected_behavior": "3+ competitors analyzed, positioning/messaging, recent campaigns, white space, channel gaps" }
+  ],
+  "evals": {
+    "trigger_path": "evals/trigger-eval.json",
+    "functional_path": "evals/evals.json"
+  },
+  "scoring": {
+    "weights": { "trigger": 0.4, "functional": 0.6 },
+    "threshold": 85,
+    "noise_floor": 2.0,
+    "runs_per_eval": 1
+  },
+  "loop": {
+    "status": "idle",
+    "current_iteration": 0,
+    "max_iterations": 30,
+    "no_op_streak": 0
+  },
+  "history": {
+    "baseline_score": null,
+    "best_score": null,
+    "best_commit": null,
+    "results_log": "hm-results.tsv"
+  },
+  "convert": {
+    "original_platform": null,
+    "original_score": null
+  }
+}

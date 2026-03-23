@@ -1,0 +1,39 @@
+{
+  "platform": "cowork",
+  "use_cases": [
+    { "id": "uc-001", "description": "MAP scoring for structured decision analysis with neutralization", "expected_behavior": "Produces MAP scores, neutralizes framing, includes pre-mortem, no sycophancy" },
+    { "id": "uc-002", "description": "Pre-mortem failure mode identification", "expected_behavior": "Identifies 5+ failure modes, works backward from failure, suggests mitigations" },
+    { "id": "uc-003", "description": "Divergent thinking to expand options", "expected_behavior": "Generates options beyond binary, surfaces assumptions, challenges framing" },
+    { "id": "uc-004", "description": "Reframe question to challenge the framing", "expected_behavior": "Offers alternative framings, questions goals, provides 2+ reformulations" },
+    { "id": "uc-005", "description": "Calibration tracking for prediction accuracy", "expected_behavior": "Calculates error, analyzes factors, suggests improvements, identifies patterns" },
+    { "id": "uc-006", "description": "M&A domain decision analysis", "expected_behavior": "Applies domain framework, identifies integration risks, includes steelman" },
+    { "id": "uc-007", "description": "Product pivot decision analysis", "expected_behavior": "Uses MAP scoring, identifies switching costs, includes pre-mortem" },
+    { "id": "uc-008", "description": "Sensitive decision with emotional content", "expected_behavior": "Neutralizes emotion, multi-dimensional analysis, considers stakeholders" }
+  ],
+  "evals": {
+    "trigger_path": "evals/trigger-eval.json",
+    "functional_path": "evals/evals.json"
+  },
+  "scoring": {
+    "weights": { "trigger": 0.4, "functional": 0.6 },
+    "threshold": 85,
+    "noise_floor": 2.0,
+    "runs_per_eval": 1
+  },
+  "loop": {
+    "status": "idle",
+    "current_iteration": 0,
+    "max_iterations": 30,
+    "no_op_streak": 0
+  },
+  "history": {
+    "baseline_score": null,
+    "best_score": null,
+    "best_commit": null,
+    "results_log": "hm-results.tsv"
+  },
+  "convert": {
+    "original_platform": null,
+    "original_score": null
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "name": "sales",
+  "version": "3.0.0",
+  "description": "Sales OS for solopreneurs and small teams. v3: rebuilt from evals — mandatory file reads before every output (research→prep→proposal pipeline enforced), Voice DNA applied to all content-producing skills, Sentinel integration active, agent handoffs written to disk (signal-trapper→daily-briefing, win-loss→competitive matrix), stage/role-aware objection handling, competitor threat probing in negotiation, 6-signal pipeline staleness scoring, champion weapons generated not just advice. Standalone or supercharged with CRM and enrichment tools. FR/EN bilingual.",
+  "author": {
+    "name": "Antigravity Factory"
+  },
+  "keywords": [
+    "sales",
+    "crm",
+    "pipeline",
+    "outreach",
+    "prospecting",
+    "linkedin",
+    "deal-coaching"
+  ],
+  "mcpServers": {
+    "exa": {
+      "command": "node",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/scripts/start-exa-mcp.js"
+      ]
+    }
+  },
+  "skills_loading": "progressive",
+  "default_bundle": "identity-tools",
+  "bundles": {
+    "identity-tools": {
+      "load_priority": 1,
+      "description": "Identity passthroughs — ICP, Voice DNA, file organization. Pre-loaded every session.",
+      "skills": [
+        "icp-creator",
+        "voice-dna-creator",
+        "para-organizer"
+      ]
+    },
+    "prospecting": {
+      "load_priority": 2,
+      "description": "Find and engage prospects — account research, competitive intel, LinkedIn, outbound sequences.",
+      "skills": [
+        "account-research",
+        "competitive-intelligence",
+        "exa-search-expert",
+        "linkedin-prospector",
+        "outbound-sequence"
+      ]
+    },
+    "pipeline-ops": {
+      "load_priority": 2,
+      "description": "Manage your pipeline — clients, daily briefing, HubSpot sync, territory planning.",
+      "skills": [
+        "client-management",
+        "daily-briefing",
+        "hubspot-sync",
+        "territory-planner"
+      ]
+    },
+    "deal-execution": {
+      "load_priority": 3,
+      "description": "Execute deals — call prep, assets, discovery, proposals, RFP analysis.",
+      "skills": [
+        "call-prep",
+        "create-an-asset",
+        "discovery-interview-prep",
+        "proposal-builder",
+        "rfp-shredder"
+      ]
+    },
+    "deal-strategy": {
+      "load_priority": 3,
+      "description": "Win deals — champion building, negotiation, objection handling, QBR prep.",
+      "skills": [
+        "champion-builder",
+        "negotiation-advisor",
+        "objection-library",
+        "qbr-builder"
+      ]
+    },
+    "linkedin-social": {
+      "load_priority": 3,
+      "description": "LinkedIn presence — create posts, engage prospects, orchestrate a full LinkedIn strategy.",
+      "skills": [
+        "linkedin-creator",
+        "linkedin-engager",
+        "linkedin-orchestrator"
+      ]
+    },
+    "coaching-quality": {
+      "load_priority": 4,
+      "description": "Improve quality — anti-slop audits, email coaching, win/loss analysis.",
+      "skills": [
+        "antislop-expert",
+        "email-coach",
+        "win-loss-analyzer"
+      ]
+    }
+  }
+}

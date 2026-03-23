@@ -1,0 +1,39 @@
+{
+  "platform": "cowork",
+  "use_cases": [
+    { "id": "uc-001", "description": "Account research for sales outreach", "expected_behavior": "Includes company overview, decision makers, news triggers, pain points, outreach hooks" },
+    { "id": "uc-002", "description": "Outbound email sequence creation", "expected_behavior": "5 emails with subjects, clear purpose each, under 150 words, no slop, clear CTAs" },
+    { "id": "uc-003", "description": "Pipeline review and risk identification", "expected_behavior": "Flags stale deals, provides next actions, calculates health metrics, prioritizes" },
+    { "id": "uc-004", "description": "Weighted revenue forecast", "expected_behavior": "Calculates weighted value, shows best/worst case, gap analysis, risk assessment" },
+    { "id": "uc-005", "description": "Negotiation preparation and BATNA analysis", "expected_behavior": "Identifies BATNA, calculates reservation price, suggests concessions, provides scripts" },
+    { "id": "uc-006", "description": "Call prep battle card creation", "expected_behavior": "Attendee research, questions, company context, agenda, anticipated objections" },
+    { "id": "uc-007", "description": "Win-loss deal analysis", "expected_behavior": "Identifies loss reason, categorizes, suggests remediation, updates playbook" },
+    { "id": "uc-008", "description": "RFP scoring and Go/No-Go decision", "expected_behavior": "GO/NO-GO recommendation, multi-dimension scoring, red flags, win probability" }
+  ],
+  "evals": {
+    "trigger_path": "evals/trigger-eval.json",
+    "functional_path": "evals/evals.json"
+  },
+  "scoring": {
+    "weights": { "trigger": 0.4, "functional": 0.6 },
+    "threshold": 85,
+    "noise_floor": 2.0,
+    "runs_per_eval": 3
+  },
+  "loop": {
+    "status": "idle",
+    "current_iteration": 0,
+    "max_iterations": 30,
+    "no_op_streak": 0
+  },
+  "history": {
+    "baseline_score": null,
+    "best_score": null,
+    "best_commit": null,
+    "results_log": "hm-results.tsv"
+  },
+  "convert": {
+    "original_platform": null,
+    "original_score": null
+  }
+}

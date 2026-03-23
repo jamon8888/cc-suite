@@ -1,0 +1,22 @@
+[
+  { "query": "Decode this client brief for a brand repositioning project", "should_trigger": true },
+  { "query": "Build a communications strategy for my client's product launch", "should_trigger": true },
+  { "query": "Create an audience portrait for our automotive client", "should_trigger": true },
+  { "query": "Design a campaign for our Q1 awareness push", "should_trigger": true },
+  { "query": "Build a new business pitch for the ACME account", "should_trigger": true },
+  { "query": "Map crisis scenarios for our pharma client", "should_trigger": true },
+  { "query": "Create a measurement framework for our campaign", "should_trigger": true },
+  { "query": "Run a strategy sprint from this brief", "should_trigger": true },
+  { "query": "Analyze the competitive landscape for our fintech client", "should_trigger": true },
+  { "query": "Build a message architecture for our B2B client", "should_trigger": true },
+  { "query": "Write a blog post about marketing", "should_trigger": false },
+  { "query": "Fix my website CSS issues", "should_trigger": false },
+  { "query": "Create a sales forecast for Q2", "should_trigger": false },
+  { "query": "Help me hire a new developer", "should_trigger": false },
+  { "query": "Design a logo for my startup", "should_trigger": false },
+  { "query": "Translate this document to French", "should_trigger": false },
+  { "query": "Debug my database connection", "should_trigger": false },
+  { "query": "Create a media landscape analysis for our tech client", "should_trigger": true },
+  { "query": "Map stakeholders for our public affairs campaign", "should_trigger": true },
+  { "query": "Build a crisis communication plan", "should_trigger": true }
+]

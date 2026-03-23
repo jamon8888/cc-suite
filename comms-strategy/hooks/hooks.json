@@ -1,0 +1,26 @@
+{
+  "PostToolUse": [
+    {
+      "matcher": "Write",
+      "hooks": [
+        {
+          "type": "prompt",
+          "prompt": "If the file just written is a client-facing document (strategic platform, campaign brief, pitch deck, or message architecture), review it for hollow communications jargon. Flag and suggest sharper alternatives for any overused terms: 'innovative', 'disruptive', 'best-in-class', 'leverage', 'synergy', 'holistic approach', 'unique'. Replace with specific, evidence-based language.",
+          "timeout": 30
+        }
+      ]
+    }
+  ],
+  "SessionStart": [
+    {
+      "matcher": "",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "cat ${CLAUDE_PLUGIN_ROOT}/data/2-Domaines/agency-profile.md 2>/dev/null || echo 'No agency profile yet. Run /comms:start to set up.'",
+          "timeout": 10
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+# Local settings
+.claude/settings.local.json
+**/settings.local.json
+
+# Data and logs
+**/data/0-Inbox/*
+**/data/4-Archives/*
+**/*.log
+
+# Hacienda Maker and Evals
+hm.json
+hm-results.tsv
+evals/transcripts/
+evals/last-run.json
+evals/trigger-results.json
+evals/transcripts-to-grade.json
+evals/analyzer-insight.md
+
+# OS files
+.DS_Store
+Thumbs.db

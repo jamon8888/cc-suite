@@ -1,0 +1,24 @@
+{
+  "_comment": "Created by /solo:start — edit mode to unlock team features",
+  "mode": "solo",
+  "members": [
+    {
+      "id": "owner",
+      "name": "",
+      "role": "owner",
+      "capacity_hours_week": 25,
+      "billable_rate": 0,
+      "revenue_share": 1.0,
+      "speciality": "",
+      "email": ""
+    }
+  ],
+  "billing_entity": "",
+  "shared_email": "",
+  "currency": "EUR",
+  "fiscal_year_start": "01-01",
+  "vat_registered": false,
+  "regime": "micro",
+  "created_at": "YYYY-MM-DD",
+  "last_updated": "YYYY-MM-DD"
+}

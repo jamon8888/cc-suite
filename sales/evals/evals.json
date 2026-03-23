@@ -1,0 +1,114 @@
+[
+  {
+    "id": "eval-001",
+    "use_case_id": "uc-001",
+    "prompt": "Research Acme Corporation for my sales outreach. I need to understand their business, key decision makers, recent news, and potential pain points for my HR software product.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output includes company overview and business model", "type": "semantic"},
+      {"text": "Output identifies at least 2 key decision makers with titles", "type": "semantic"},
+      {"text": "Output surfaces recent news or triggers (funding, hiring, expansion)", "type": "semantic"},
+      {"text": "Output identifies potential pain points relevant to HR software", "type": "semantic"},
+      {"text": "Output suggests outreach hooks based on research findings", "type": "semantic"}
+    ],
+    "notes": "Tests account-research skill functionality"
+  },
+  {
+    "id": "eval-002",
+    "use_case_id": "uc-002",
+    "prompt": "Create a 5-email outbound sequence for my project management tool targeting operations managers at mid-size companies. Use my voice: direct, no fluff, data-driven.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output contains exactly 5 emails with subject lines", "type": "semantic"},
+      {"text": "Each email has a clear purpose in the sequence (awareness, education, etc.)", "type": "semantic"},
+      {"text": "Email 1 is under 150 words", "type": "semantic"},
+      {"text": "Output does NOT contain 'hope this finds you well' or similar slop", "type": "semantic"},
+      {"text": "Each email includes a clear call-to-action", "type": "semantic"}
+    ],
+    "notes": "Tests outbound-sequence skill functionality"
+  },
+  {
+    "id": "eval-003",
+    "use_case_id": "uc-003",
+    "prompt": "Review my pipeline and identify deals at risk. Here's my current pipeline:\n1. Acme Corp - $50K - Last contact: 21 days ago\n2. Beta Inc - $30K - Last contact: 5 days ago\n3. Gamma LLC - $80K - Last contact: 45 days ago\n4. Delta Co - $25K - Last contact: 3 days ago",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output identifies Gamma LLC as highest risk (45 days stale)", "type": "semantic"},
+      {"text": "Output flags Acme Corp as at-risk (21 days borderline)", "type": "semantic"},
+      {"text": "Output provides next-action recommendations for each flagged deal", "type": "semantic"},
+      {"text": "Output calculates pipeline health metrics", "type": "semantic"},
+      {"text": "Output prioritizes deals by urgency", "type": "semantic"}
+    ],
+    "notes": "Tests pipeline-guardian-agent functionality"
+  },
+  {
+    "id": "eval-004",
+    "use_case_id": "uc-004",
+    "prompt": "Generate a weighted revenue forecast for Q2. Here are my deals:\n1. Acme Corp - $50K - 70% probability\n2. Beta Inc - $30K - 40% probability\n3. Gamma LLC - $80K - 20% probability\n4. Delta Co - $25K - 90% probability",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output calculates weighted value: $50K×0.7 + $30K×0.4 + $80K×0.2 + $25K×0.9 = $87K", "type": "semantic"},
+      {"text": "Output shows best case (all close): $185K", "type": "semantic"},
+      {"text": "Output shows worst case (none close): $0", "type": "semantic"},
+      {"text": "Output identifies gap to quota if quota is provided", "type": "semantic"},
+      {"text": "Output provides risk assessment of the forecast", "type": "semantic"}
+    ],
+    "notes": "Tests forecast command functionality"
+  },
+  {
+    "id": "eval-005",
+    "use_case_id": "uc-005",
+    "prompt": "Help me prepare for my negotiation with Acme Corp. They want a 30% discount. My product is $50K/year. My best alternative is a deal with Beta Inc at $40K.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output identifies my BATNA ($40K with Beta)", "type": "semantic"},
+      {"text": "Output calculates the reservation price (minimum acceptable)", "type": "semantic"},
+      {"text": "Output suggests concession strategies", "type": "semantic"},
+      {"text": "Output provides scripts for responding to discount requests", "type": "semantic"},
+      {"text": "Output identifies leverage points and trade-offs beyond price", "type": "semantic"}
+    ],
+    "notes": "Tests negotiation-advisor skill functionality"
+  },
+  {
+    "id": "eval-006",
+    "use_case_id": "uc-006",
+    "prompt": "Create a call prep battle card for my meeting with Acme Corp tomorrow. Attendees: Sarah Chen (CFO), Mike Johnson (VP Operations). My product: HR software for mid-size companies.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output includes attendee research (roles, likely concerns)", "type": "semantic"},
+      {"text": "Output suggests specific questions for each attendee", "type": "semantic"},
+      {"text": "Output includes company context relevant to the meeting", "type": "semantic"},
+      {"text": "Output provides an agenda structure", "type": "semantic"},
+      {"text": "Output anticipates objections from CFO perspective", "type": "semantic"}
+    ],
+    "notes": "Tests call-prep skill functionality"
+  },
+  {
+    "id": "eval-007",
+    "use_case_id": "uc-007",
+    "prompt": "Analyze why I lost the Acme Corp deal. Here's what happened: We had 3 demos, they loved the product, but chose a competitor who offered 24/7 support. Deal size was $50K.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output identifies the primary loss reason (support coverage)", "type": "semantic"},
+      {"text": "Output categorizes the loss (product gap, pricing, service)", "type": "semantic"},
+      {"text": "Output suggests remediation strategies for future deals", "type": "semantic"},
+      {"text": "Output updates the win-loss playbook patterns", "type": "semantic"},
+      {"text": "Output identifies if this was an ICP fit issue", "type": "semantic"}
+    ],
+    "notes": "Tests win-loss-analyzer skill functionality"
+  },
+  {
+    "id": "eval-008",
+    "use_case_id": "uc-008",
+    "prompt": "Score this RFP and tell me if we should respond. RFP Summary: Government agency seeking HR software for 500 employees. Budget: $200K. Deadline: 10 days. Requirements: 24/7 support, SOC2 compliance, on-premise deployment option.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output provides a GO/NO-GO recommendation", "type": "semantic"},
+      {"text": "Output scores the opportunity on multiple dimensions", "type": "semantic"},
+      {"text": "Output identifies red flags (tight deadline, on-premise requirement)", "type": "semantic"},
+      {"text": "Output estimates win probability", "type": "semantic"},
+      {"text": "Output lists requirements that may disqualify us", "type": "semantic"}
+    ],
+    "notes": "Tests rfp-shredder skill functionality"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  { "query": "Research Acme Corp for my sales outreach", "should_trigger": true },
+  { "query": "Create an outbound email sequence for my consulting services", "should_trigger": true },
+  { "query": "Review my pipeline and flag deals at risk", "should_trigger": true },
+  { "query": "Generate a weighted revenue forecast for Q2", "should_trigger": true },
+  { "query": "Help me prepare for my negotiation with Microsoft", "should_trigger": true },
+  { "query": "Create a battle card for my call with the CFO tomorrow", "should_trigger": true },
+  { "query": "Analyze why I lost the Acme deal", "should_trigger": true },
+  { "query": "Score this RFP and tell me if we should respond", "should_trigger": true },
+  { "query": "Build a champion development plan for my main contact at Acme", "should_trigger": true },
+  { "query": "Draft a follow-up email after my discovery call", "should_trigger": true },
+  { "query": "Write a blog post about marketing trends", "should_trigger": false },
+  { "query": "Fix my JavaScript code that's not working", "should_trigger": false },
+  { "query": "Create a hiring decision analysis", "should_trigger": false },
+  { "query": "Design a logo for my company", "should_trigger": false },
+  { "query": "Plan my vacation itinerary for Italy", "should_trigger": false },
+  { "query": "Translate this email to German", "should_trigger": false },
+  { "query": "Help me choose a restaurant for dinner", "should_trigger": false },
+  { "query": "Generate a LinkedIn post about my sales methodology", "should_trigger": true },
+  { "query": "Handle the objection 'your price is too high'", "should_trigger": true },
+  { "query": "Create a quarterly business review presentation", "should_trigger": true }
+]

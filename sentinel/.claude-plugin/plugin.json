@@ -1,0 +1,22 @@
+{
+  "name": "sentinel",
+  "version": "8.4.0",
+  "description": "Structured decision protocol. Forces the questions you would skip, the perspectives you would miss, and the math you would approximate. Based on Kahneman (MAP), Klein (pre-mortem), Tetlock (calibration).",
+  "author": {
+    "name": "Manuel"
+  },
+  "keywords": [
+    "decision",
+    "strategy",
+    "bias",
+    "kahneman",
+    "premortem",
+    "calibration"
+  ],
+  "components": {
+    "agents": 10,
+    "commands": 8,
+    "skills": 6,
+    "mcp_servers": 0
+  }
+}

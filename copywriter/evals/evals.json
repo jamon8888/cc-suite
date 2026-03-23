@@ -1,0 +1,143 @@
+[
+  {
+    "id": "eval-001",
+    "use_case_id": "uc-001",
+    "prompt": "Write an SEO blog post about '5 automation tools every solopreneur needs in 2024'. Include H2 sections, meta description, and internal linking suggestions.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output contains at least 3 H2 headings", "type": "semantic"},
+      {"text": "Output includes a meta description under 160 characters", "type": "semantic"},
+      {"text": "Output mentions at least 5 specific automation tools", "type": "semantic"},
+      {"text": "Output follows a structured format (intro, body, conclusion)", "type": "semantic"},
+      {"text": "Output does not contain slop phrases like 'delve', 'tapestry', 'game-changer'", "type": "semantic"}
+    ],
+    "notes": "Tests seo-blog-writer skill functionality"
+  },
+  {
+    "id": "eval-002",
+    "use_case_id": "uc-002",
+    "prompt": "Create a LinkedIn post about my experience transitioning from corporate to freelancing. Make it personal and engaging with a clear hook.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output starts with an attention-grabbing first line (hook)", "type": "semantic"},
+      {"text": "Output uses personal 'I' perspective throughout", "type": "semantic"},
+      {"text": "Output contains between 150-300 words", "type": "semantic"},
+      {"text": "Output includes a call-to-action or engagement question at the end", "type": "semantic"},
+      {"text": "Output does not use generic AI phrases", "type": "semantic"}
+    ],
+    "notes": "Tests linkedin-post skill functionality"
+  },
+  {
+    "id": "eval-003",
+    "use_case_id": "uc-003",
+    "prompt": "Write a monthly newsletter about productivity tips for remote workers. Include a subject line, preview text, and main content with 3 actionable tips.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output includes a subject line under 50 characters", "type": "semantic"},
+      {"text": "Output includes preview text under 90 characters", "type": "semantic"},
+      {"text": "Output contains exactly 3 actionable productivity tips", "type": "semantic"},
+      {"text": "Output includes a P.S. section at the end", "type": "semantic"},
+      {"text": "Output follows newsletter structure (greeting, content, sign-off)", "type": "semantic"}
+    ],
+    "notes": "Tests newsletter-writer skill functionality"
+  },
+  {
+    "id": "eval-004",
+    "use_case_id": "uc-004",
+    "prompt": "Create a 5-email sales sequence for my productivity coaching services. Each email should have a specific purpose in the sales funnel.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output contains exactly 5 distinct emails", "type": "semantic"},
+      {"text": "Each email has a clear subject line", "type": "semantic"},
+      {"text": "Email 1 is introduction/awareness focused", "type": "semantic"},
+      {"text": "Email 5 is final call-to-action/urgency focused", "type": "semantic"},
+      {"text": "Each email is under 200 words", "type": "semantic"}
+    ],
+    "notes": "Tests sales-email-sequence skill functionality"
+  },
+  {
+    "id": "eval-005",
+    "use_case_id": "uc-005",
+    "prompt": "Generate a YouTube video script (5-7 minutes) about 'How to build a personal brand on LinkedIn'. Include visual cues and timestamps.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output includes at least 5 timestamp markers (e.g., [00:00])", "type": "semantic"},
+      {"text": "Output includes visual cues in brackets (e.g., [B-Roll: laptop])", "type": "semantic"},
+      {"text": "Output includes an intro hook in the first 30 seconds", "type": "semantic"},
+      {"text": "Output includes a clear call-to-subscribe at the end", "type": "semantic"},
+      {"text": "Output is structured for 5-7 minute runtime", "type": "semantic"}
+    ],
+    "notes": "Tests video-script-generator skill functionality"
+  },
+  {
+    "id": "eval-006",
+    "use_case_id": "uc-006",
+    "prompt": "Create a content calendar for April 2024 focused on 'productivity and remote work'. Include blog, LinkedIn, and newsletter content.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output covers all days of April 2024", "type": "semantic"},
+      {"text": "Output includes at least 4 blog post topics", "type": "semantic"},
+      {"text": "Output includes at least 8 LinkedIn post topics", "type": "semantic"},
+      {"text": "Output includes at least 4 newsletter topics", "type": "semantic"},
+      {"text": "Output follows cascade repurposing model (hero content to splinters)", "type": "semantic"}
+    ],
+    "notes": "Tests content-calendar-planner skill functionality"
+  },
+  {
+    "id": "eval-007",
+    "use_case_id": "uc-007",
+    "prompt": "Audit this text for AI-generated patterns: 'In today's rapidly evolving digital landscape, leveraging cutting-edge AI tools can help you seamlessly navigate the complex tapestry of modern business challenges.'",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output identifies 'rapidly evolving digital landscape' as slop", "type": "semantic"},
+      {"text": "Output identifies 'leveraging' as problematic verb", "type": "semantic"},
+      {"text": "Output identifies 'cutting-edge' as slop phrase", "type": "semantic"},
+      {"text": "Output identifies 'seamlessly' as slop adverb", "type": "semantic"},
+      {"text": "Output identifies 'tapestry' as slop metaphor", "type": "semantic"},
+      {"text": "Output provides a rewrite suggestion", "type": "semantic"}
+    ],
+    "notes": "Tests antislop-expert skill functionality"
+  },
+  {
+    "id": "eval-008",
+    "use_case_id": "uc-008",
+    "prompt": "Write a Twitter thread (8 tweets) about the biggest mistakes new freelancers make and how to avoid them.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output contains exactly 8 tweets", "type": "semantic"},
+      {"text": "Each tweet is under 280 characters", "type": "semantic"},
+      {"text": "Tweet 1 is a hook that encourages reading", "type": "semantic"},
+      {"text": "Final tweet includes a call-to-action", "type": "semantic"},
+      {"text": "Thread covers at least 5 different mistakes", "type": "semantic"}
+    ],
+    "notes": "Tests twitter-thread skill functionality"
+  },
+  {
+    "id": "eval-009",
+    "use_case_id": "uc-009",
+    "prompt": "Generate a landing page copy for 'TaskFlow' - a new project management app for solopreneurs. Include headline, subheadline, 3 feature sections, and CTA.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output includes a compelling headline under 10 words", "type": "semantic"},
+      {"text": "Output includes a subheadline that expands on the value proposition", "type": "semantic"},
+      {"text": "Output contains exactly 3 feature sections", "type": "semantic"},
+      {"text": "Each feature section has a title and description", "type": "semantic"},
+      {"text": "Output includes at least one call-to-action button text", "type": "semantic"}
+    ],
+    "notes": "Tests landing-page-copy skill functionality"
+  },
+  {
+    "id": "eval-010",
+    "use_case_id": "uc-010",
+    "prompt": "Create a Voice DNA profile based on this writing sample: 'Look, I've been in the trenches. Built three companies, failed twice. Here's what actually works - no fluff, no theory. Just real stuff you can use today.'",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output identifies the tone as conversational/direct", "type": "semantic"},
+      {"text": "Output notes the use of personal anecdotes", "type": "semantic"},
+      {"text": "Output identifies contractions as a stylistic choice", "type": "semantic"},
+      {"text": "Output captures the 'no fluff' value proposition", "type": "semantic"},
+      {"text": "Output creates at least 5 voice attributes", "type": "semantic"}
+    ],
+    "notes": "Tests voice-dna-creator skill functionality"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  { "query": "Write a blog post about AI tools for small businesses", "should_trigger": true },
+  { "query": "Help me create my voice DNA profile", "should_trigger": true },
+  { "query": "Generate a LinkedIn post about productivity tips", "should_trigger": true },
+  { "query": "Write a newsletter about my latest product launch", "should_trigger": true },
+  { "query": "Create a sales email sequence for my consulting services", "should_trigger": true },
+  { "query": "Generate a YouTube script for my tutorial video", "should_trigger": true },
+  { "query": "Plan my content calendar for next month", "should_trigger": true },
+  { "query": "Audit this text for AI-generated patterns", "should_trigger": true },
+  { "query": "Research Reddit for content ideas about remote work", "should_trigger": true },
+  { "query": "Write a Twitter thread about startup lessons", "should_trigger": true },
+  { "query": "Debug my Python code that's throwing an error", "should_trigger": false },
+  { "query": "Create a database schema for my application", "should_trigger": false },
+  { "query": "Help me with my tax return calculations", "should_trigger": false },
+  { "query": "Write a legal contract for my freelance client", "should_trigger": false },
+  { "query": "Design a logo for my new brand", "should_trigger": false },
+  { "query": "Translate this document to Spanish", "should_trigger": false },
+  { "query": "Create a financial forecast spreadsheet", "should_trigger": false },
+  { "query": "Write an SEO blog about content marketing strategies", "should_trigger": true },
+  { "query": "Generate a landing page copy for my SaaS product", "should_trigger": true },
+  { "query": "Fix the CSS layout on my website", "should_trigger": false }
+]

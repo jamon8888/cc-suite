@@ -1,0 +1,41 @@
+{
+  "platform": "cowork",
+  "use_cases": [
+    { "id": "uc-001", "description": "Write SEO blog post with structured format and meta description", "expected_behavior": "Generates blog post with H2 headings, meta description, tool mentions, no slop phrases" },
+    { "id": "uc-002", "description": "Create engaging LinkedIn post with personal perspective", "expected_behavior": "Generates LinkedIn post with hook, personal voice, engagement question, no AI cliches" },
+    { "id": "uc-003", "description": "Write monthly newsletter with subject, preview, and actionable tips", "expected_behavior": "Generates newsletter with subject line, preview text, 3 tips, P.S. section" },
+    { "id": "uc-004", "description": "Create sales email sequence for services", "expected_behavior": "Generates 5-email sequence with funnel progression, subject lines, proper length" },
+    { "id": "uc-005", "description": "Generate YouTube video script with timestamps and visual cues", "expected_behavior": "Generates script with timestamp markers, visual cues, intro hook, CTA" },
+    { "id": "uc-006", "description": "Create monthly content calendar with cascade repurposing", "expected_behavior": "Generates calendar with blogs, LinkedIn posts, newsletters following cascade model" },
+    { "id": "uc-007", "description": "Audit text for AI-generated patterns and provide rewrite", "expected_behavior": "Identifies slop phrases, provides rewritten alternative" },
+    { "id": "uc-008", "description": "Write Twitter thread with hooks and CTAs", "expected_behavior": "Generates 8 tweets under 280 characters each with hook and CTA" },
+    { "id": "uc-009", "description": "Generate landing page copy with features and CTA", "expected_behavior": "Generates headline, subheadline, 3 features, and CTA button text" },
+    { "id": "uc-010", "description": "Create Voice DNA profile from writing sample", "expected_behavior": "Extracts tone, style attributes, and value proposition from sample" }
+  ],
+  "evals": {
+    "trigger_path": "evals/trigger-eval.json",
+    "functional_path": "evals/evals.json"
+  },
+  "scoring": {
+    "weights": { "trigger": 0.4, "functional": 0.6 },
+    "threshold": 85,
+    "noise_floor": 2.0,
+    "runs_per_eval": 3
+  },
+  "loop": {
+    "status": "idle",
+    "current_iteration": 0,
+    "max_iterations": 30,
+    "no_op_streak": 0
+  },
+  "history": {
+    "baseline_score": null,
+    "best_score": null,
+    "best_commit": null,
+    "results_log": "hm-results.tsv"
+  },
+  "convert": {
+    "original_platform": null,
+    "original_score": null
+  }
+}

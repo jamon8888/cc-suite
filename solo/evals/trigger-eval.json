@@ -1,0 +1,22 @@
+[
+  { "query": "Set up my business profile for my freelance consulting business", "should_trigger": true },
+  { "query": "Create my Voice DNA from my writing samples", "should_trigger": true },
+  { "query": "Build a product discovery for my new app idea", "should_trigger": true },
+  { "query": "Validate my business idea for a SaaS product", "should_trigger": true },
+  { "query": "Create a PRD for my mobile app", "should_trigger": true },
+  { "query": "Manage my client pipeline and track deal progress", "should_trigger": true },
+  { "query": "Generate an invoice for my consulting work", "should_trigger": true },
+  { "query": "Get my weekly business review and priorities", "should_trigger": true },
+  { "query": "Build a diagnostic assessment for lead qualification", "should_trigger": true },
+  { "query": "Research a company for my sales outreach", "should_trigger": true },
+  { "query": "Write a blog post about technology trends", "should_trigger": false },
+  { "query": "Fix my Python code that's throwing errors", "should_trigger": false },
+  { "query": "Create a hiring decision analysis framework", "should_trigger": false },
+  { "query": "Design a logo for my new brand", "should_trigger": false },
+  { "query": "Plan my vacation itinerary for Japan", "should_trigger": false },
+  { "query": "Translate this document to Spanish", "should_trigger": false },
+  { "query": "Debug my database connection string", "should_trigger": false },
+  { "query": "Track my time and calculate my hourly rate", "should_trigger": true },
+  { "query": "Create a pricing strategy for my consulting packages", "should_trigger": true },
+  { "query": "Review my financial health and profitability", "should_trigger": true }
+]

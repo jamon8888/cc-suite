@@ -1,0 +1,22 @@
+{
+  "_cowork_note": "Cowork does not support PostToolUse hooks. Automatic sequences are embedded in each command's workflow steps. The weekly calibration review is a Scheduled Task — set it up via Claude Desktop → left sidebar → Scheduled → New Task.",
+
+  "scheduled_tasks": [
+    {
+      "name": "weekly-calibration-review",
+      "description": "Every Monday 9am — surfaces unresolved predictions from the decision ledger",
+      "cadence": "weekly",
+      "day": "monday",
+      "time": "09:00",
+      "command": "/sentinel-review",
+      "_setup": "Claude Desktop → left sidebar → Scheduled → New Task → command: /sentinel-review → every Monday at 09:00"
+    }
+  ],
+
+  "_inline_sequences": {
+    "note": "PostToolUse hooks replaced by explicit steps in command workflows",
+    "structure-builder → reality-checker": "Handled as Step 3 in STANDARD/FULL protocol in sentinel.md",
+    "prediction recording": "Handled as final Write step in LITE/STANDARD/FULL protocols in sentinel.md",
+    "calibration-coach": "Invoked explicitly in /sentinel-review, /sentinel-blind, /sentinel-post"
+  }
+}

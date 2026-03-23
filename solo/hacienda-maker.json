@@ -1,0 +1,39 @@
+{
+  "platform": "cowork",
+  "use_cases": [
+    { "id": "uc-001", "description": "Business profile creation for freelancers", "expected_behavior": "Includes identity, services, pricing, target clients, saved to correct path" },
+    { "id": "uc-002", "description": "Voice DNA creation from writing sample", "expected_behavior": "Identifies tone, notes style choices, captures value prop, 5+ attributes" },
+    { "id": "uc-003", "description": "Product discovery for app idea", "expected_behavior": "2+ personas, core problems, customer journey, assumptions, next steps" },
+    { "id": "uc-004", "description": "PRD creation for mobile app", "expected_behavior": "Problem statement, personas, features with criteria, user stories, metrics" },
+    { "id": "uc-005", "description": "Client card creation", "expected_behavior": "Company info, contact details, project value, pipeline stage, correct path" },
+    { "id": "uc-006", "description": "Invoice generation with French format", "expected_behavior": "Invoice number, line items, TVA exoneration, correct total, payment terms" },
+    { "id": "uc-007", "description": "Lead qualification diagnostic", "expected_behavior": "4 dimensions with weights, questions, scoring bands, routing, correct path" },
+    { "id": "uc-008", "description": "Weekly business review", "expected_behavior": "Revenue vs goal, gap identification, overdue highlights, priorities, pipeline health" }
+  ],
+  "evals": {
+    "trigger_path": "evals/trigger-eval.json",
+    "functional_path": "evals/evals.json"
+  },
+  "scoring": {
+    "weights": { "trigger": 0.4, "functional": 0.6 },
+    "threshold": 85,
+    "noise_floor": 2.0,
+    "runs_per_eval": 3
+  },
+  "loop": {
+    "status": "idle",
+    "current_iteration": 0,
+    "max_iterations": 30,
+    "no_op_streak": 0
+  },
+  "history": {
+    "baseline_score": null,
+    "best_score": null,
+    "best_commit": null,
+    "results_log": "hm-results.tsv"
+  },
+  "convert": {
+    "original_platform": null,
+    "original_score": null
+  }
+}

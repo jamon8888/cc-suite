@@ -1,0 +1,115 @@
+[
+  {
+    "id": "eval-001",
+    "use_case_id": "uc-001",
+    "prompt": "Decode this client brief: Our client is a French automotive brand launching a new electric vehicle. Target audience: urban professionals 30-45. Budget: €500K. Goal: generate 5000 test drive requests in 6 months. Create a Strategic Platform.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output includes a clear business challenge statement", "type": "semantic"},
+      {"text": "Output defines the communications challenge", "type": "semantic"},
+      {"text": "Output identifies the target audience with tensions and motivations", "type": "semantic"},
+      {"text": "Output includes a core insight", "type": "semantic"},
+      {"text": "Output proposes an idea territory", "type": "semantic"},
+      {"text": "Output does NOT use slop phrases like '360°' or 'innovative'", "type": "semantic"}
+    ],
+    "notes": "Tests brief-analyzer skill functionality"
+  },
+  {
+    "id": "eval-002",
+    "use_case_id": "uc-002",
+    "prompt": "Create an audience portrait for urban professionals interested in electric vehicles in France. Age 30-45. Include segments, tensions, media behaviors, and decision drivers.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output identifies at least 2 distinct audience segments", "type": "semantic"},
+      {"text": "Output includes tensions and pain points for each segment", "type": "semantic"},
+      {"text": "Output describes media consumption habits", "type": "semantic"},
+      {"text": "Output identifies decision drivers for EV purchase", "type": "semantic"},
+      {"text": "Output avoids generic demographics; includes psychographics", "type": "semantic"}
+    ],
+    "notes": "Tests audience-intelligence skill functionality"
+  },
+  {
+    "id": "eval-003",
+    "use_case_id": "uc-003",
+    "prompt": "Build a message architecture for a B2B SaaS client in the HR space. Their key differentiator is AI-powered employee retention prediction. Target: HR Directors at 200-500 employee companies.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output includes a primary claim/message", "type": "semantic"},
+      {"text": "Output has at least 3 supporting message pillars", "type": "semantic"},
+      {"text": "Output includes proof points for each pillar", "type": "semantic"},
+      {"text": "Output differentiates from competitors", "type": "semantic"},
+      {"text": "Output is tailored to HR Director persona", "type": "semantic"}
+    ],
+    "notes": "Tests message-architecture skill functionality"
+  },
+  {
+    "id": "eval-004",
+    "use_case_id": "uc-004",
+    "prompt": "Design a campaign strategy for launching a new organic snack brand. Budget: €200K. Target: health-conscious millennials. Goal: achieve 15% brand awareness in 6 months. Use PESO model.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output includes a campaign concept/theme", "type": "semantic"},
+      {"text": "Output uses PESO framework (Paid, Earned, Shared, Owned)", "type": "semantic"},
+      {"text": "Output includes a phased timeline", "type": "semantic"},
+      {"text": "Output allocates budget across channels", "type": "semantic"},
+      {"text": "Output defines success metrics per channel", "type": "semantic"}
+    ],
+    "notes": "Tests campaign-strategy skill functionality"
+  },
+  {
+    "id": "eval-005",
+    "use_case_id": "uc-005",
+    "prompt": "Build a new business pitch for a prospective client: A French bank looking to rebrand and attract younger customers (25-35). We're a mid-size communications agency with financial services experience.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output includes prospect situation analysis", "type": "semantic"},
+      {"text": "Output identifies strategic challenges and opportunities", "type": "semantic"},
+      {"text": "Output proposes a strategic recommendation", "type": "semantic"},
+      {"text": "Output outlines a 15-20 slide pitch deck structure", "type": "semantic"},
+      {"text": "Output includes differentiators vs other agencies", "type": "semantic"}
+    ],
+    "notes": "Tests pitch-builder-agent functionality"
+  },
+  {
+    "id": "eval-006",
+    "use_case_id": "uc-006",
+    "prompt": "Create a crisis communication plan for a pharma company launching a new drug. Identify top 5 risk scenarios and draft holding statements for each.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output identifies at least 5 distinct crisis scenarios", "type": "semantic"},
+      {"text": "Output provides a holding statement for each scenario", "type": "semantic"},
+      {"text": "Output includes stakeholder mapping for crisis response", "type": "semantic"},
+      {"text": "Output defines escalation protocols", "type": "semantic"},
+      {"text": "Output includes a crisis response team structure", "type": "semantic"}
+    ],
+    "notes": "Tests crisis-planner skill functionality"
+  },
+  {
+    "id": "eval-007",
+    "use_case_id": "uc-007",
+    "prompt": "Create a measurement framework for our brand awareness campaign. Goal: increase unaided awareness from 15% to 25% in 6 months. Budget: €300K. Include 4-level measurement architecture.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output uses 4-level measurement framework (outputs, outcomes, impact, ROI)", "type": "semantic"},
+      {"text": "Output defines specific KPIs for each level", "type": "semantic"},
+      {"text": "Output includes benchmark data where applicable", "type": "semantic"},
+      {"text": "Output proposes measurement tools/methods", "type": "semantic"},
+      {"text": "Output includes a dashboard template structure", "type": "semantic"}
+    ],
+    "notes": "Tests comms-measurement skill functionality"
+  },
+  {
+    "id": "eval-008",
+    "use_case_id": "uc-008",
+    "prompt": "Map the competitive communications landscape for our client in the French telemedicine space. Identify 3 main competitors and their positioning, campaigns, and white space opportunities.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output analyzes at least 3 competitors", "type": "semantic"},
+      {"text": "Output identifies each competitor's positioning and messaging", "type": "semantic"},
+      {"text": "Output describes recent campaigns by competitors", "type": "semantic"},
+      {"text": "Output identifies white space/opportunity areas", "type": "semantic"},
+      {"text": "Output includes channel and audience gaps", "type": "semantic"}
+    ],
+    "notes": "Tests competitive-comms skill functionality"
+  }
+]

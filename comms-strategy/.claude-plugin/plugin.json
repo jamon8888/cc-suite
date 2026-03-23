@@ -1,0 +1,30 @@
+{
+  "name": "comms-strategy",
+  "version": "2.0.1",
+  "description": "Strategic planning OS for brand and integrated communications agencies. v2.0: rebuilt from eval findings \u2014 earned media hooks, B2B buying committee protocols, sector-specific constraints (food/pharma/finance/tech), insight-to-message bridge, slop guard, sector benchmarks, and behavioral science (Kahneman, Sutherland, Sharp). Bilingual FR/EN.",
+  "author": {
+    "name": "NMarchitecte"
+  },
+  "keywords": [
+    "communications",
+    "comms",
+    "brand-strategy",
+    "campaign",
+    "PR",
+    "media",
+    "messaging",
+    "agency",
+    "strategic-planning",
+    "integrated-comms",
+    "behavioral-science",
+    "System-1",
+    "mental-availability",
+    "psycho-logic"
+  ],
+  "components": {
+    "agents": 4,
+    "commands": 10,
+    "skills": 12,
+    "mcp_servers": 0
+  }
+}

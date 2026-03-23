@@ -1,0 +1,136 @@
+{
+  "name": "solo",
+  "version": "4.0.0",
+  "description": "Solopreneur OS — now with team support (1 to 8 people). Solo, duo, and team modes: capacity planning, revenue split, partnership health. New: time tracking (real effective hourly rates), quarterly goal tracking, subcontractor management, standup agent, team-health agent, year-end command. FR legal compliance (TVA micro-entrepreneur, art. 293 B, late payment penalties). Built on PARA methodology. Bilingual FR/EN.",
+  "author": {
+    "name": "Antigravity Factory"
+  },
+  "keywords": [
+    "solopreneur",
+    "clients",
+    "pipeline",
+    "para",
+    "revenue",
+    "content"
+  ],
+  "mcpServers": {
+    "exa": {
+      "command": "node",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/scripts/start-exa-mcp.js"
+      ]
+    },
+    "reddit": {
+      "command": "python",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/scripts/reddit_mcp.py"
+      ]
+    }
+  },
+  "skills_loading": "progressive",
+  "default_bundle": "core-identity",
+  "bundles": {
+    "core-identity": {
+      "load_priority": 1,
+      "description": "Business identity foundations — profile, voice, audience (ICP + persona unified), positioning, team setup, and file organisation. Always pre-loaded.",
+      "skills": [
+        "business-profile-creator",
+        "voice-dna-creator",
+        "audience-builder",
+        "positioning-statement",
+        "para-organizer"
+      ]
+    },
+    "client-work": {
+      "load_priority": 2,
+      "description": "Full client lifecycle — onboarding, discovery, proposals, scope management, and contracts.",
+      "skills": [
+        "client-management",
+        "client-onboarding",
+        "discovery-call",
+        "proposal-generator",
+        "scope-management",
+        "contract-templates"
+      ]
+    },
+    "revenue-ops": {
+      "load_priority": 2,
+      "description": "Financial operations — invoicing (TVA-compliant), expenses, financial health (real P&L with subcontractor costs), retainers, and pricing strategy.",
+      "skills": [
+        "invoice-generator",
+        "expense-tracker",
+        "financial-health",
+        "retainer-manager",
+        "pricing-strategy",
+        "product-pricing-model"
+      ]
+    },
+    "sales-growth": {
+      "load_priority": 3,
+      "description": "Lead generation and sales — pipeline, outreach, company research, competitive analysis, and landing pages.",
+      "skills": [
+        "sales-pipeline",
+        "draft-outreach",
+        "company-research",
+        "competitive-analyzer",
+        "exa-search-expert"
+      ]
+    },
+    "product-build": {
+      "load_priority": 3,
+      "description": "Product development — orchestration, PRDs, user stories, design briefs, problem statements, and personas.",
+      "skills": [
+        "pipeline-orchestrator",
+        "prd-development",
+        "user-story",
+        "problem-statement"
+      ]
+    },
+    "research-validate": {
+      "load_priority": 3,
+      "description": "Market research and validation — user discovery, market sizing, journey mapping, and idea testing.",
+      "skills": [
+        "user-discovery",
+        "customer-journey-map",
+        "idea-test"
+      ]
+    },
+    "diagnostics": {
+      "load_priority": 4,
+      "description": "Scored diagnostic assessments — build, run, and analyze diagnostics with Tally integration.",
+      "skills": [
+        "diagnostic-builder",
+        "diagnostic-runner",
+        "diagnostic-analyzer",
+        "tally-integration"
+      ]
+    },
+    "operations": {
+      "load_priority": 4,
+      "description": "Business operations — weekly reviews, project management, capacity planning, health advisors, and launch planning.",
+      "skills": [
+        "weekly-review",
+        "project-management",
+        "business-health-advisor",
+        "launch-planner",
+        "retainer-manager"
+      ]
+    },
+    "business-ops": {
+      "load_priority": 2,
+      "description": "Business operations layer — time tracking, quarterly goals, and subcontractor management. Unlocks real margins and actual hourly rates.",
+      "skills": [
+        "time-tracker",
+        "goal-tracker",
+        "subcontractor-manager"
+      ]
+    },
+    "team-mode": {
+      "load_priority": 3,
+      "description": "Team features — activated in duo/team mode. Capacity planning across members, revenue attribution, partnership health.",
+      "skills": [
+        "capacity-planner"
+      ]
+    }
+  }
+}

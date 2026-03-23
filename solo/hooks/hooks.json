@@ -1,0 +1,34 @@
+{
+  "SessionStart": [
+    {
+      "hooks": [{ "type": "prompt", "prompt": "Load business context: read ${CLAUDE_PLUGIN_ROOT}/data/2-Domaines/business-profile.json if it exists. Use it to initialize Solo session context (language preference, monthly revenue target, services offered).", "timeout": 30 }]
+    }
+  ],
+  "PostToolUse": [
+    {
+      "matcher": "draft-outreach|proposal-generator|discovery-call|landing-page-builder",
+      "hooks": [{ "type": "prompt", "prompt": "Run antislop quality check on the output just generated. Check for banned words (delve, tapestry, game-changer, unleash, elevate, demystify, revolutionize, synergy) and rewrite any found.", "timeout": 60 }],
+      "_note": "Central antislop gate. Sales + Copywriter plugins defer to this when Solo is installed."
+    },
+    {
+      "matcher": "/solo:build discover",
+      "hooks": [{ "type": "command", "command": "echo 'Trigger: discovery-synthesizer-agent — synthesize persona, JTBD, journey into go/no-go scorecard'", "timeout": 120 }],
+      "_note": "Auto-synthesizes persona, JTBD, journey → go/no-go scorecard."
+    },
+    {
+      "matcher": "invoice-generator",
+      "hooks": [{ "type": "prompt", "prompt": "After the invoice is generated, check ${CLAUDE_PLUGIN_ROOT}/data/1-Projets/pipeline.md and update the relevant deal status to 'Invoice Sent' if a matching deal exists.", "timeout": 30 }],
+      "_note": "Moves deal to Invoice Sent in pipeline.md after first invoice."
+    },
+    {
+      "matcher": "pricing-strategy",
+      "condition": "sentinel_installed",
+      "hooks": [{ "type": "command", "command": "echo 'Trigger: run reality-checker — validate rate card assumptions against market data'", "timeout": 90 }],
+      "_note": "When Sentinel installed, auto-runs reality-checker after rate card save."
+    },
+    {
+      "matcher": "discovery-call",
+      "hooks": [{ "type": "prompt", "prompt": "After this discovery call completes, synthesize the persona, JTBD, journey, and problem statement into a unified insight report with a go/no-go scorecard. Save to the project directory.", "timeout": 120 }]
+    }
+  ]
+}

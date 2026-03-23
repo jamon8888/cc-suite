@@ -1,0 +1,114 @@
+[
+  {
+    "id": "eval-001",
+    "use_case_id": "uc-001",
+    "prompt": "Create my business profile for my freelance UX consulting business. I work with SaaS startups, charge $150/hour, and specialize in user research and prototyping. Target clients are Series A companies with 10-50 employees.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output includes business name/identity", "type": "semantic"},
+      {"text": "Output defines services and specializations", "type": "semantic"},
+      {"text": "Output specifies pricing structure ($150/hour)", "type": "semantic"},
+      {"text": "Output identifies target client profile (Series A, 10-50 employees)", "type": "semantic"},
+      {"text": "Output is saved to data/2-Domaines/business-profile.json", "type": "semantic"}
+    ],
+    "notes": "Tests business-profile-creator skill functionality"
+  },
+  {
+    "id": "eval-002",
+    "use_case_id": "uc-002",
+    "prompt": "Create a Voice DNA profile from this writing sample: 'Look, I've been in the trenches. Built three products, failed twice. Here's what actually works - no fluff, just real stuff you can use today. Most UX advice is theoretical garbage. I'll show you what moves the needle.'",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output identifies the tone as direct/conversational", "type": "semantic"},
+      {"text": "Output notes personal anecdote usage", "type": "semantic"},
+      {"text": "Output captures the anti-fluff value proposition", "type": "semantic"},
+      {"text": "Output identifies contractions as a style choice", "type": "semantic"},
+      {"text": "Output creates at least 5 voice attributes", "type": "semantic"}
+    ],
+    "notes": "Tests voice-dna-creator skill functionality"
+  },
+  {
+    "id": "eval-003",
+    "use_case_id": "uc-003",
+    "prompt": "Run product discovery for my idea: A mobile app that helps freelancers track their time and automatically calculates their effective hourly rate. I want to understand who would use this and what problem it solves.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output includes at least 2 proto-personas", "type": "semantic"},
+      {"text": "Output identifies core problems the app would solve", "type": "semantic"},
+      {"text": "Output maps a basic customer journey", "type": "semantic"},
+      {"text": "Output surfaces assumptions that need validation", "type": "semantic"},
+      {"text": "Output proposes next steps for validation", "type": "semantic"}
+    ],
+    "notes": "Tests product discovery pipeline"
+  },
+  {
+    "id": "eval-004",
+    "use_case_id": "uc-004",
+    "prompt": "Create a PRD (Product Requirements Document) for my time tracking app. Key features: manual time entry, automatic rate calculation, invoice generation, export to PDF. Target: freelancers and consultants.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output includes problem statement", "type": "semantic"},
+      {"text": "Output defines target user personas", "type": "semantic"},
+      {"text": "Output lists features with acceptance criteria", "type": "semantic"},
+      {"text": "Output includes user stories", "type": "semantic"},
+      {"text": "Output defines success metrics", "type": "semantic"}
+    ],
+    "notes": "Tests prd-development skill functionality"
+  },
+  {
+    "id": "eval-005",
+    "use_case_id": "uc-005",
+    "prompt": "Create a client card for my new client Acme Corp. They're a Series A SaaS company, 30 employees, working with me on a 3-month UX audit project. Value: $15,000. Key contact: Sarah Chen, Head of Product.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output includes client name and company info", "type": "semantic"},
+      {"text": "Output includes key contact details", "type": "semantic"},
+      {"text": "Output tracks project value ($15,000)", "type": "semantic"},
+      {"text": "Output sets initial pipeline stage", "type": "semantic"},
+      {"text": "Output is saved to data/1-Projets/clients/", "type": "semantic"}
+    ],
+    "notes": "Tests client-management skill functionality"
+  },
+  {
+    "id": "eval-006",
+    "use_case_id": "uc-006",
+    "prompt": "Generate an invoice for my consulting work. Client: Acme Corp. Project: UX Audit. Hours: 40. Rate: $150/hour. Total: $6,000. Invoice date: 2024-03-15. Due date: 2024-04-15. French micro-entrepreneur format with TVA exoneration.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output includes invoice number (INV-YYYY-NNN format)", "type": "semantic"},
+      {"text": "Output shows line items with hours and rate", "type": "semantic"},
+      {"text": "Output includes TVA exoneration reference (art. 293 B)", "type": "semantic"},
+      {"text": "Output totals $6,000", "type": "semantic"},
+      {"text": "Output includes payment terms and due date", "type": "semantic"}
+    ],
+    "notes": "Tests invoice-generator skill functionality"
+  },
+  {
+    "id": "eval-007",
+    "use_case_id": "uc-007",
+    "prompt": "Create a lead qualification diagnostic for my UX consulting business. I want to qualify prospects before spending time on proposals. Dimensions: Budget, Timeline, Decision Authority, Problem Clarity.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output defines 4 dimensions with weights", "type": "semantic"},
+      {"text": "Output includes 2-3 questions per dimension", "type": "semantic"},
+      {"text": "Output has scoring bands (Low/Medium/High)", "type": "semantic"},
+      {"text": "Output defines routing for each band", "type": "semantic"},
+      {"text": "Output is saved to data/2-Domaines/diagnostics/", "type": "semantic"}
+    ],
+    "notes": "Tests diagnostic-builder skill functionality"
+  },
+  {
+    "id": "eval-008",
+    "use_case_id": "uc-008",
+    "prompt": "Generate a weekly review for my business. Current state: 2 active clients (Acme Corp $15K, Beta Inc $8K), 1 pending proposal (Gamma LLC $12K), 3 overdue invoices totaling $4,500. Revenue this month: $12K. Goal: $20K/month.",
+    "input_files": [],
+    "expectations": [
+      {"text": "Output summarizes current revenue vs goal ($12K vs $20K)", "type": "semantic"},
+      {"text": "Output identifies revenue gap ($8K)", "type": "semantic"},
+      {"text": "Output highlights overdue invoices ($4,500)", "type": "semantic"},
+      {"text": "Output prioritizes next actions", "type": "semantic"},
+      {"text": "Output includes pipeline health summary", "type": "semantic"}
+    ],
+    "notes": "Tests weekly-review skill functionality"
+  }
+]
