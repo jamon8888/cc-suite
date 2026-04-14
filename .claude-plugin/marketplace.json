@@ -75,6 +75,20 @@
       "author": {
         "name": "NMarchitecte"
       }
+    },
+    {
+      "name": "LinkedIn",
+      "description": "LinkedIn Growth Engine. Chrome-native content pipeline: generate, queue, post, analyze, learn. Strategic commenting, competitor monitoring, autoresearch.",
+      "category": "marketing",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/jamon8888/cc-suite",
+        "path": "linkedin"
+      },
+      "homepage": "https://github.com/jamon8888/cc-suite/tree/master/linkedin",
+      "author": {
+        "name": "NMarchitecte"
+      }
     }
   ]
 }
