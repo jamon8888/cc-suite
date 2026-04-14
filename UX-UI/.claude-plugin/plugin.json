@@ -1,0 +1,12 @@
+{
+  "name": "design",
+  "version": "2.3.0",
+  "description": "Accelerate design workflows — wireframes, user flows, prototypes, visual critique with heuristics scoring, pattern extraction, design system management, UX writing, accessibility audits, research synthesis, and dev handoff. Powered by Impeccable-grade quality standards. Multi-platform aware (Web, Mobile Web, iOS, Android, Desktop App). Full MCP-native discovery stack: feedback mining, analytics discovery, research ops, and research repository.",
+  "author": {
+    "name": "Anthropic"
+  },
+  "components": {
+    "skills": 16,
+    "commands": 13
+  }
+}

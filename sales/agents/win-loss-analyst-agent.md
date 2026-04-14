@@ -6,7 +6,7 @@ description: >
   or "run post-mortem". Writes findings to disk — isolated debriefs have zero value.
 model: sonnet
 tools: ["Read", "Write", "Glob"]
-color: teal
+color: purple
 ---
 
 # Agent: Win-Loss Analyst

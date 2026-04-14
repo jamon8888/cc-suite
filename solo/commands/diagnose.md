@@ -1,4 +1,5 @@
 ---
+name: solo:diagnose
 description: "Create, run, and analyze scored diagnostic assessments — qualify leads, monitor clients, validate products, and assess your own business"
 argument-hint: "[create | run | results | library | share]"
 allowed-tools: Read, Write, Glob

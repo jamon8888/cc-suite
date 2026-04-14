@@ -1,4 +1,5 @@
 ---
+name: sales:coach
 description: Get a personalized weekly coaching session based on your pipeline, outreach, and win-loss patterns
 argument-hint: "[focus area] or leave blank for full review"
 allowed-tools: Read, Write, Glob

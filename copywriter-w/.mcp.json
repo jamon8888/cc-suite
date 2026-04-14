@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "wordpress": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@wordpress/mcp-server",
+        "--url", "${user_config.wp_site_url}",
+        "--username", "${user_config.wp_username}",
+        "--password", "${user_config.wp_app_password}"
+      ],
+      "_comment": "WordPress CMS for auto-publish. Optional — generates markdown if not configured."
+    }
+  }
+}

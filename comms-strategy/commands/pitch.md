@@ -1,4 +1,5 @@
 ---
+name: comms:pitch
 description: "Develop a compelling new business pitch — prospect research, strategic diagnosis, pitch narrative, fee structure, and presentation architecture."
 argument-hint: "[prospect name] [brief description of the pitch]"
 allowed-tools: Read, Write, Glob, Search

@@ -1,4 +1,5 @@
 ---
+name: solo:prospect
 description: "Find prospects, craft outreach, and generate proposals"
 argument-hint: "[find | outreach | proposal]"
 allowed-tools: Read, Write, Bash, Search, Skill

@@ -1,0 +1,20 @@
+{
+  "skill_name": "deliver",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Produce the final client report for the European EV market entry engagement",
+      "expected_output": "An executive-grade .docx report with all required sections",
+      "expectations": [
+        "Title page with client name, engagement title, date, and confidentiality notice",
+        "Executive summary that fits in half a page",
+        "Body sections organized by storyline headlines",
+        "Counter-argument section addressing pre-mortem failure modes",
+        "Specific, sequenced recommendations with timelines",
+        "Research Notes section with numbered source entries",
+        "Decision Audit Trail appendix",
+        "No banned language (leverage, synergies, holistic, etc.)"
+      ]
+    }
+  ]
+}

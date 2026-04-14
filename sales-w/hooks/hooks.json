@@ -1,0 +1,13 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [{
+          "type": "prompt",
+          "prompt": "Read ${CLAUDE_PLUGIN_ROOT}/data/sales-profile.json if it exists. Use language_preference to set output language. If language_preference is missing or file is empty, default to French and suggest /sales:demarrer.",
+          "timeout": 30
+        }]
+      }
+    ]
+  }
+}

@@ -1,4 +1,5 @@
 ---
+name: sales:prospect
 description: "Find & Screen Prospects - The Hunter"
 argument-hint: "[keywords | url | inbound]"
 allowed-tools: Read, Write, Glob

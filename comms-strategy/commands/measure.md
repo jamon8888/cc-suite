@@ -1,4 +1,5 @@
 ---
+name: comms:measure
 description: "Define a communications measurement framework — KPIs by funnel level and PESO channel, baselines, targets, and reporting templates."
 argument-hint: "[campaign or client name]"
 allowed-tools: Read, Write, Glob, Search

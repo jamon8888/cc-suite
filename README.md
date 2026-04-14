@@ -1,51 +1,82 @@
-# CC Suite — The Ultimate Claude Code & CoWork Plugin Marketplace
+# Sentinel v8 - Decision Hygiene Protocol
 
-> Elevate your Claude Code and Claude CoWork experience with a professional-grade suite of autonomous agents and strategic tools.
+> **A Claude Code & CoWork Plugin**
 
-The **CC Suite** is a curated collection of plugins designed for solopreneurs, founders, and boutique agencies. It turns Claude into a full-service business partner that handles everything from product validation to technical sales and decision architecture.
+## What it does
 
----
+Sentinel forces structured thinking when you're deciding under pressure.
+It doesn't detect biases - it asks the questions you'd skip.
 
-## 🛒 Marketplace & Quick Install
+Three core mechanisms, each backed by research:
 
-You can install any plugin from this suite directly into your **Claude Code** or **Claude CoWork** environment.
+1. **MAP scoring** (Kahneman, *Noise*, 2021) - Breaks your decision into
+   independent dimensions, scores each separately, distinguishes what you
+   know from what you're guessing. This is choice architecture: it makes
+   halo effect mechanically impossible.
 
-### Installation via Marketplace
-To install a plugin locally from this workspace, use the following from your terminal:
+2. **Pre-mortem** (Klein, 2007; Veinott et al., 2010) - Imagines your plan
+   has failed and works backward. Empirically reduces overconfidence more
+   than pro/cons or standard critique. Increases risk identification by ~30%.
 
-```bash
-# General Syntax
-claude plugin add [path-to-plugin]
+3. **Calibration tracking** (Tetlock, *Superforecasting*, 2015) - Records
+   your predictions with confidence levels, then measures how accurate you
+   actually are. Without feedback, judgment doesn't improve.
 
-# Examples
-claude plugin add ./solo        # Installs the Solopreneur OS
+## What it doesn't do
+
+Sentinel uses a language model. LLMs exhibit cognitive biases themselves
+(Echterhoff et al., EMNLP 2024; Malberg et al., 2025). This tool is a
+structured thinking partner, not an infallible scanner. The value is in
+the STRUCTURE it forces, not in "detecting" things.
+
+## Architecture
+
+- **7 agents**: questioner, structure-builder, reality-checker, failure-finder,
+  noise-calculator, logic-tester, calibration-coach
+- **5 commands**: /sentinel, /sentinel-diverge, /sentinel-reframe,
+  /sentinel-review, /sentinel-setup
+- **4 Python scripts**: triage, noise, calibration, inhibition
+- **2 reference catalogs**: 35 biases, 31 fallacies
+- **2 domain packs**: hiring, product management
+- **6 templates**: decision record, pre-mortem, dual-frame, etc.
+
+## Key design choice
+
+Previous versions (v1-v7.1) centered on bias detection: scan -> label -> score.
+v8 centers on choice architecture: structure -> questions -> pre-mortem.
+
+The research says choice architecture works better than debiasing-by-information
+(Fasolo et al., 2024). Asking "would you make this decision if you hadn't
+already spent the money?" beats "SUNK_COST detected, severity CRITICAL."
+
+## Usage
+
+Describe a decision. Sentinel handles the rest.
+
+```
+/sentinel Should I accept this acquisition offer?
+/sentinel-diverge I'm stuck between two options
+/sentinel-reframe How do I convince the board?
+/sentinel-review How are my past predictions doing?
 ```
 
-This repository also includes an official **Marketplace Manifest** at `.claude-plugin/marketplace.json` for discovery and distribution.
+## Changes from v7.1
 
----
+- Bias scanner -> Questioner (questions, not diagnoses)
+- Outside view -> Reality checker (honest about what it knows vs guesses)
+- Structured evaluator -> Structure builder (MAP is now the CENTER)
+- Removed fake interaction multipliers (x1.8, x2.0 without empirical basis)
+- Inhibition check integrated into MAP (structure IS the inhibition)
+- Honest limitation disclaimer built into the protocol
+- 44 files -> 41 files (removed redundant agents, kept substance)
 
-## 📦 Included Plugins
 
-| Plugin | Version | Core Capability |
-|--------|---------|-----------------|
-| **[Solo](./solo/README.md)** | `4.0.0` | **Business OS**: Client management, PRDs, and TVA-compliant invoicing. |
-| **[Sales](./sales/README.md)** | `3.0.0` | **Revenue OS**: Account research, MEDDIC coaching, and pipeline health. |
-| **[Sentinel](./sentinel/README.md)** | `8.4.0` | **Decision Hygiene**: MAP scoring and pre-mortems for high-stakes choices. |
-| **[Copywriter](./copywriter/README.md)** | `2.0.0` | **Content Engine**: High-conversion copy synced with your Voice DNA. |
-| **[Comms Strategy](./comms-strategy/README.md)** | `2.0.1` | **Strategy OS**: Brand positioning and behavioral-science campaigns. |
+## Scheduled Task Setup
 
----
+To enable the weekly calibration review (not automatable via hooks in Cowork):
 
-## 🚀 Getting Started
+1. Claude Desktop → left sidebar → Scheduled → New Task
+2. Command: `/sentinel-review`
+3. Cadence: every Monday at 09:00
 
-1.  **Clone the Suite**:
-    `git clone https://github.com/jamon8888/cc-suite.git`
-2.  **Pick Your Plugin**: Navigate to the directory or install via the `marketplace.json` manifest.
-3.  **Run Initialization**: Use `/solo:start` or `/sales:start` once installed to configure your specific business identity.
-
-## 🏗️ Architecture
-All plugins are built on the **PARA methodology** (Projects, Areas, Resources, Archives) for consistent file organization across your entire business brain.
-
----
-*Designed for builders, by builders.*
+This surfaces unresolved predictions from the decision ledger each week.

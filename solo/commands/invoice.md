@@ -1,4 +1,5 @@
 ---
+name: solo:invoice
 description: "Create invoices, track payments, and monitor financial health"
 argument-hint: "[create | status | report | remind]"
 allowed-tools: Read, Write, Glob

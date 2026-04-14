@@ -87,5 +87,11 @@
         "wordpress-publisher"
       ]
     }
+  },
+  "components": {
+    "agents": 7,
+    "commands": 6,
+    "skills": 20,
+    "mcp_servers": 2
   }
 }

@@ -1,4 +1,5 @@
 ---
+name: solo:check-connections
 description: "Check which integrations are connected, configure API keys, and get optimization recommendations"
 allowed-tools: Read, Write, Bash
 model: sonnet

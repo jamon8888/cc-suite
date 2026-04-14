@@ -1,4 +1,5 @@
 ---
+name: comms:sprint
 description: "Run a full autonomous strategy sprint — brief in, complete 8-document strategy package out. Chains all 8 strategy skills in sequence with one human checkpoint to validate strategic direction before messaging begins."
 argument-hint: "[brief text or file path — optional, will prompt if not provided]"
 allowed-tools: Read, Write, Glob, WebSearch

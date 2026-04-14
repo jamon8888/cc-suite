@@ -1,0 +1,12 @@
+{
+  "name": "strategic-planner",
+  "version": "1.0.0",
+  "description": "Strategic planning consultant plugin. Runs complete strategic engagements — scoping, research, rigorous analysis with built-in decision science, synthesis, and executive-grade deliverables. Designed for management consultants and corporate strategy teams.",
+  "author": {
+    "name": "Chip Alexandru"
+  },
+  "keywords": [
+    "strategic planning", "consulting", "strategy", "research",
+    "analysis", "decision science", "pre-mortem", "MAP scoring"
+  ]
+}

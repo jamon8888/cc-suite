@@ -1,4 +1,5 @@
 ---
+name: solo:build
 description: "Run the full product pipeline — from discovery to launch"
 argument-hint: "[discover | validate | design | prototype | launch | status]"
 allowed-tools: Read, Write, Bash, Glob, Skill

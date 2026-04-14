@@ -1,0 +1,14 @@
+{
+  "name": "sales",
+  "version": "1.0.0",
+  "description": "Evidence-based sales OS. Wiki-backed competitive intel, account research, win/loss patterns, deal preparation. All grounded in cited, confidence-scored sources with entity freshness tracking.",
+  "author": { "name": "NMarchitecte" },
+  "license": "MIT",
+  "keywords": ["sales", "crm", "pipeline", "wiki", "competitive-intelligence", "prospecting", "linkedin", "deal-coaching", "evidence-based"],
+  "userConfig": {
+    "exa_api_key": {
+      "description": "Exa API key for neural search (optional, falls back to WebSearch)",
+      "sensitive": true
+    }
+  }
+}

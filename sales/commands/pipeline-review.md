@@ -1,4 +1,5 @@
 ---
+name: sales:pipeline-review
 description: Analyze pipeline health — prioritize deals, flag risks, get a weekly action plan
 argument-hint: "<segment or rep>"
 allowed-tools: Read, Write, Glob

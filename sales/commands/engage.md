@@ -1,4 +1,5 @@
 ---
+name: sales:engage
 description: "Engage & Warm Up Prospects"
 argument-hint: "[url | topic | warm-up]"
 allowed-tools: Read, Write, Glob

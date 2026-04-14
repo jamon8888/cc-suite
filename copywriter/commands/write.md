@@ -1,4 +1,5 @@
 ---
+name: copywriter:write
 description: "Unified Copywriting Command: Blog, Social, Newsletter, Script, Sales"
 argument-hint: "[blog | social | newsletter | script | sales] [topic]"
 allowed-tools: Read, Write, WebSearch, WebFetch

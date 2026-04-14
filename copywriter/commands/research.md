@@ -1,4 +1,5 @@
 ---
+name: copywriter:research
 description: "Deep Market & Competitor Research. Mines Reddit, Web, and Reviews."
 argument-hint: "[topic | competitor name]"
 allowed-tools: WebSearch, WebFetch

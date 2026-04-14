@@ -1,4 +1,5 @@
 ---
+name: sales:start
 description: "Initialize Sales OS - Configure your Sales DNA"
 argument-hint: "[reset|update]"
 allowed-tools: Read, Write, Bash, Glob

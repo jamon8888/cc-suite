@@ -1,0 +1,18 @@
+{
+  "skill_name": "docx",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a Word document from this JSON spec with a title page, two sections with tables, and research notes",
+      "expected_output": "A valid .docx file with professional formatting",
+      "files": ["scripts-claude-code-only/create_docx.py"],
+      "expectations": [
+        "The .docx file is created without errors",
+        "Title page contains all specified fields",
+        "Tables have dark blue headers and alternating row shading",
+        "Page numbers appear at the bottom center",
+        "Research Notes section is present with numbered entries"
+      ]
+    }
+  ]
+}

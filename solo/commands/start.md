@@ -1,4 +1,5 @@
 ---
+name: solo:start
 description: "Quick start onboarding - set up your Solo profile in 3 minutes"
 argument-hint: "[profile-type: content|service|product|full]"
 allowed-tools: Read, Write, Bash, Glob, Skill

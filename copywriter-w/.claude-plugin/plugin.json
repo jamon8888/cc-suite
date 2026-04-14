@@ -1,0 +1,38 @@
+{
+  "name": "copywriter",
+  "version": "1.0.0",
+  "description": "Evidence-based copywriting studio. Wiki-backed research, Voice DNA, anti-slop, multi-format writing. Every piece of content grounded in cited, confidence-scored sources.",
+  "author": {
+    "name": "NMarchitecte"
+  },
+  "license": "MIT",
+  "keywords": [
+    "copywriting",
+    "wiki",
+    "knowledge-base",
+    "content",
+    "voice-dna",
+    "seo",
+    "research",
+    "evidence-based",
+    "antislop"
+  ],
+  "userConfig": {
+    "exa_api_key": {
+      "description": "Exa API key for neural search (optional, falls back to WebSearch)",
+      "sensitive": true
+    },
+    "wp_site_url": {
+      "description": "WordPress site URL for auto-publish (optional)",
+      "sensitive": false
+    },
+    "wp_username": {
+      "description": "WordPress username (optional)",
+      "sensitive": false
+    },
+    "wp_app_password": {
+      "description": "WordPress application password (optional)",
+      "sensitive": true
+    }
+  }
+}

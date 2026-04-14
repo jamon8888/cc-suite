@@ -1,4 +1,5 @@
 ---
+name: copywriter:check-connections
 description: Configure API keys and check which research tools are connected
 argument-hint: "No arguments required"
 allowed-tools: Read, Write, Bash

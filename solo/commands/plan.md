@@ -1,4 +1,5 @@
 ---
+name: solo:plan
 description: "Organize your files with PARA methodology and review active projects"
 argument-hint: "[organize | review]"
 allowed-tools: Read, Write, Glob

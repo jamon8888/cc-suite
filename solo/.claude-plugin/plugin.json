@@ -132,5 +132,11 @@
         "capacity-planner"
       ]
     }
+  },
+  "components": {
+    "agents": 11,
+    "commands": 12,
+    "skills": 48,
+    "mcp_servers": 2
   }
 }

@@ -1,4 +1,5 @@
 ---
+name: comms:monitor
 description: "Media and competitive monitoring — track press coverage, share of voice, competitor communications, and emerging issues in real time."
 argument-hint: "[client name] [competitors to track]"
 allowed-tools: Read, Write, Glob, Search

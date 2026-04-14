@@ -1,4 +1,5 @@
 ---
+name: sales:negotiate
 description: "Negotiation Advisor - The Closer"
 argument-hint: "[scenario | counter | roleplay]"
 allowed-tools: Read, Write, Glob

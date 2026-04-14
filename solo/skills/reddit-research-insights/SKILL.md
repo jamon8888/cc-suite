@@ -1,7 +1,6 @@
 ---
 name: reddit-research-insights
-deprecated: true
-replaced_by: copywriter plugin
+description: "deprecated — moved to copywriter plugin"
 ---
 # Skill: reddit-research-insights — Moved to Copywriter
 

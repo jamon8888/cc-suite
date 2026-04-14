@@ -1,4 +1,5 @@
 ---
+name: comms:campaign
 description: "Build a complete integrated campaign architecture — concept, PESO channel mix, phased activation plan, timeline, and budget framework."
 argument-hint: "[campaign name or client brief]"
 allowed-tools: Read, Write, Glob, Search

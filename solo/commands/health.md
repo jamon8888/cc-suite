@@ -1,4 +1,5 @@
 ---
+name: solo:health
 description: "On-demand business health check across all 6 dimensions"
 argument-hint: "[full | revenue | clients | pipeline | capacity | retainers | wellbeing]"
 allowed-tools: Read, Write, Glob

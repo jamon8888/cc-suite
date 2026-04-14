@@ -1,0 +1,17 @@
+{
+  "skill_name": "research",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Research the European EV charging market",
+      "expected_output": "A validated research package with findings from two independent agents and a validator",
+      "expectations": [
+        "Two independent research threads were dispatched",
+        "A validator cross-checked the findings",
+        "Each data point has a source credibility score (CS-1 to CS-4)",
+        "An executive summary of key findings is provided",
+        "Gaps and under-explored areas are identified"
+      ]
+    }
+  ]
+}

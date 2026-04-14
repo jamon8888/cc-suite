@@ -1,4 +1,5 @@
 ---
+name: solo:research
 description: "Research markets, competitors, prospects, and trends"
 argument-hint: "[market | competitor | prospect | trends]"
 allowed-tools: Read, Write, Search

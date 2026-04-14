@@ -1,4 +1,5 @@
 ---
+name: comms:crisis
 description: "Crisis communication planning — scenario mapping, response protocols, holding statements, and escalation procedures."
 argument-hint: "[client name or crisis scenario]"
 allowed-tools: Read, Write, Glob

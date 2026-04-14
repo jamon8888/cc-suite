@@ -1,4 +1,5 @@
 ---
+name: sales:forecast
 description: Generate a weighted sales forecast with best/likely/worst scenarios, commit vs. upside breakdown, and gap analysis
 argument-hint: "<period>"
 allowed-tools: Read, Write, Glob

@@ -94,5 +94,11 @@
         "win-loss-analyzer"
       ]
     }
+  },
+  "components": {
+    "agents": 8,
+    "commands": 13,
+    "skills": 27,
+    "mcp_servers": 1
   }
 }

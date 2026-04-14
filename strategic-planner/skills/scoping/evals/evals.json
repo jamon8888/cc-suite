@@ -1,0 +1,27 @@
+{
+  "skill_name": "scoping",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Scope this problem: The client wants to grow in Asia but isn't sure how",
+      "expected_output": "A sharpened problem statement with core question, scope, success criteria, and deliverable definition",
+      "expectations": [
+        "The output contains a one-sentence core strategic question",
+        "The output defines clear scope boundaries",
+        "The output specifies success criteria",
+        "The output confirms deliverable format with the user"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Define the strategic challenge for a mid-size SaaS company considering European expansion",
+      "expected_output": "A Precision Anchor with core question, scope, constraints, and deliverable blueprint",
+      "expectations": [
+        "The output identifies the core decision question",
+        "The output mentions timeline and budget constraints",
+        "The output asks about the audience for the deliverable",
+        "The output does not proceed without user confirmation"
+      ]
+    }
+  ]
+}

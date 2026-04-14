@@ -1,4 +1,5 @@
 ---
+name: copywriter:plan
 description: "Generate a strategic Content Calendar for the month/week."
 argument-hint: "[month] [focus topic]"
 allowed-tools: Read

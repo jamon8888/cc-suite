@@ -1,4 +1,5 @@
 ---
+name: sales:win-loss
 description: Run a post-mortem on a closed deal or analyze win-loss patterns across your pipeline
 argument-hint: "[company name] or 'patterns'"
 allowed-tools: Read, Write, Glob

@@ -1,0 +1,207 @@
+{
+  "skill_name": "audience-intelligence",
+  "runs_per_eval": 3,
+  "queries": [
+    {
+      "query": "Decode this client brief for a brand repositioning project",
+      "should_trigger": true,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 0.0
+    },
+    {
+      "query": "Build a communications strategy for my client's product launch",
+      "should_trigger": true,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 0.0
+    },
+    {
+      "query": "Create an audience portrait for our automotive client",
+      "should_trigger": true,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 0.0
+    },
+    {
+      "query": "Design a campaign for our Q1 awareness push",
+      "should_trigger": true,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 0.0
+    },
+    {
+      "query": "Build a new business pitch for the ACME account",
+      "should_trigger": true,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 0.0
+    },
+    {
+      "query": "Map crisis scenarios for our pharma client",
+      "should_trigger": true,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 0.0
+    },
+    {
+      "query": "Create a measurement framework for our campaign",
+      "should_trigger": true,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 0.0
+    },
+    {
+      "query": "Run a strategy sprint from this brief",
+      "should_trigger": true,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 0.0
+    },
+    {
+      "query": "Analyze the competitive landscape for our fintech client",
+      "should_trigger": true,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 0.0
+    },
+    {
+      "query": "Build a message architecture for our B2B client",
+      "should_trigger": true,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 0.0
+    },
+    {
+      "query": "Write a blog post about marketing",
+      "should_trigger": false,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 1.0
+    },
+    {
+      "query": "Fix my website CSS issues",
+      "should_trigger": false,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 1.0
+    },
+    {
+      "query": "Create a sales forecast for Q2",
+      "should_trigger": false,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 1.0
+    },
+    {
+      "query": "Help me hire a new developer",
+      "should_trigger": false,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 1.0
+    },
+    {
+      "query": "Design a logo for my startup",
+      "should_trigger": false,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 1.0
+    },
+    {
+      "query": "Translate this document to French",
+      "should_trigger": false,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 1.0
+    },
+    {
+      "query": "Debug my database connection",
+      "should_trigger": false,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 1.0
+    },
+    {
+      "query": "Create a media landscape analysis for our tech client",
+      "should_trigger": true,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 0.0
+    },
+    {
+      "query": "Map stakeholders for our public affairs campaign",
+      "should_trigger": true,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 0.0
+    },
+    {
+      "query": "Build a crisis communication plan",
+      "should_trigger": true,
+      "results": [
+        false,
+        false,
+        false
+      ],
+      "pass_rate_q": 0.0
+    }
+  ],
+  "total_queries": 20
+}

@@ -1,4 +1,5 @@
 ---
+name: comms:strategy
 description: "Build a full integrated communications strategy — from brief to annual plan, covering audience, messaging, channels, phasing, and measurement."
 argument-hint: "[client name] [year or campaign period]"
 allowed-tools: Read, Write, Glob, Search, Skill

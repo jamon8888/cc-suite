@@ -1,4 +1,5 @@
 ---
+name: sales:linkedin
 description: "Launch the LinkedIn Orchestrator - Manage your daily sales routine"
 argument-hint: "[autonomous | plan | resume | status]"
 allowed-tools: Read, Write, Glob

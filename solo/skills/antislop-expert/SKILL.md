@@ -1,7 +1,6 @@
 ---
 name: antislop-expert
-deprecated: true
-replaced_by: copywriter plugin
+description: "deprecated — moved to copywriter plugin"
 ---
 # Skill: antislop-expert — Moved to Copywriter
 

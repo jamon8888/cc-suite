@@ -1,0 +1,17 @@
+{
+  "skill_name": "synthesis",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Build the storyline from the research and analysis on European EV market entry",
+      "expected_output": "A strategic storyline with governing message, headline sequence, and evidence map",
+      "expectations": [
+        "A one-sentence governing message (the recommendation)",
+        "3-5 supporting headlines that form a coherent argument",
+        "Evidence mapped to each headline with source citations",
+        "Top pre-mortem failure modes addressed in a risks section",
+        "The storyline follows the logic of the answer, not the process"
+      ]
+    }
+  ]
+}

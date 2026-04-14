@@ -1,4 +1,5 @@
 ---
+name: solo:weekly-review
 description: "Your Monday morning business dashboard — revenue, pipeline, content, priorities"
 argument-hint: ""
 allowed-tools: Read, Write, Glob

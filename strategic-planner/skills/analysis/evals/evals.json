@@ -1,0 +1,18 @@
+{
+  "skill_name": "analysis",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Analyze these research findings on the European EV market and stress-test the recommendation to enter",
+      "expected_output": "An Analysis Report with MAP scoring, verification questions, pre-mortem, and reality check",
+      "expectations": [
+        "A triage score is calculated (stakes x complexity x time x info quality)",
+        "MAP scoring table with 4-8 dimensions and confidence scores",
+        "At least 5 verification questions targeting assumptions",
+        "Pre-mortem with at least 5 failure modes and prevention measures",
+        "Reality check comparing expected outcome against base rates",
+        "A recommendation with key conditions and confidence level"
+      ]
+    }
+  ]
+}

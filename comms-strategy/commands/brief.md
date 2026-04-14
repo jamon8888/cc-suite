@@ -1,4 +1,5 @@
 ---
+name: comms:brief
 description: "Analyze and decode a client brief — extract the strategic platform, surface gaps, generate clarifying questions, and produce a briefing document ready for the team."
 argument-hint: "[paste brief or provide file path]"
 allowed-tools: Read, Write, Glob, Search, Skill

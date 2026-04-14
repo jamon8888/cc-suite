@@ -1,4 +1,5 @@
 ---
+name: sales:pipeline
 description: "Manage Deals, Forecasts, and Deal Reviews"
 argument-hint: "[review | forecast | stale | board-deck]"
 allowed-tools: Read, Write, Glob

@@ -1,4 +1,5 @@
 ---
+name: sales:create
 description: "Create High-Authority Content"
 argument-hint: "[post | carousel | asset]"
 allowed-tools: Read, Write, Glob

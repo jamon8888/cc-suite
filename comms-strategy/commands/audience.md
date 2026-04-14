@@ -1,4 +1,5 @@
 ---
+name: comms:audience
 description: "Deep audience research — build complete audience portraits with demographics, psychographics, media behaviours, cultural codes, and insight."
 argument-hint: "[audience description or client name]"
 allowed-tools: Read, Write, Glob, Search

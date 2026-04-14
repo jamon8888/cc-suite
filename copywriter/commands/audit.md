@@ -1,4 +1,5 @@
 ---
+name: copywriter:audit
 description: "Run a Forensic Authenticity Audit on any text. Detects AI Slop and Corporate Jargon."
 argument-hint: "[paste text or file path]"
 allowed-tools: Read

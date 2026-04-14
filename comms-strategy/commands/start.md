@@ -1,4 +1,5 @@
 ---
+name: comms:start
 description: "Agency onboarding — set up your agency profile, client portfolio, and working preferences. Run once to unlock all comms-strategy capabilities."
 argument-hint: "[agency name or skip]"
 allowed-tools: Read, Write, Bash, Glob

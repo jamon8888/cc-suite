@@ -1,0 +1,686 @@
+[
+  {
+    "eval_id": "eval-001",
+    "run_n": 1,
+    "expectations": [
+      {
+        "text": "Output includes a clear business challenge statement",
+        "type": "semantic"
+      },
+      {
+        "text": "Output defines the communications challenge",
+        "type": "semantic"
+      },
+      {
+        "text": "Output identifies the target audience with tensions and motivations",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes a core insight",
+        "type": "semantic"
+      },
+      {
+        "text": "Output proposes an idea territory",
+        "type": "semantic"
+      },
+      {
+        "text": "Output does NOT use slop phrases like '360\u00b0' or 'innovative'",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-001-run-1.md",
+    "output_path": "evals/transcripts/eval-001-run-1-grading.json"
+  },
+  {
+    "eval_id": "eval-002",
+    "run_n": 1,
+    "expectations": [
+      {
+        "text": "Output identifies at least 2 distinct audience segments",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes tensions and pain points for each segment",
+        "type": "semantic"
+      },
+      {
+        "text": "Output describes media consumption habits",
+        "type": "semantic"
+      },
+      {
+        "text": "Output identifies decision drivers for EV purchase",
+        "type": "semantic"
+      },
+      {
+        "text": "Output avoids generic demographics; includes psychographics",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-002-run-1.md",
+    "output_path": "evals/transcripts/eval-002-run-1-grading.json"
+  },
+  {
+    "eval_id": "eval-003",
+    "run_n": 1,
+    "expectations": [
+      {
+        "text": "Output includes a primary claim/message",
+        "type": "semantic"
+      },
+      {
+        "text": "Output has at least 3 supporting message pillars",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes proof points for each pillar",
+        "type": "semantic"
+      },
+      {
+        "text": "Output differentiates from competitors",
+        "type": "semantic"
+      },
+      {
+        "text": "Output is tailored to HR Director persona",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-003-run-1.md",
+    "output_path": "evals/transcripts/eval-003-run-1-grading.json"
+  },
+  {
+    "eval_id": "eval-004",
+    "run_n": 1,
+    "expectations": [
+      {
+        "text": "Output includes a campaign concept/theme",
+        "type": "semantic"
+      },
+      {
+        "text": "Output uses PESO framework (Paid, Earned, Shared, Owned)",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes a phased timeline",
+        "type": "semantic"
+      },
+      {
+        "text": "Output allocates budget across channels",
+        "type": "semantic"
+      },
+      {
+        "text": "Output defines success metrics per channel",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-004-run-1.md",
+    "output_path": "evals/transcripts/eval-004-run-1-grading.json"
+  },
+  {
+    "eval_id": "eval-005",
+    "run_n": 1,
+    "expectations": [
+      {
+        "text": "Output includes prospect situation analysis",
+        "type": "semantic"
+      },
+      {
+        "text": "Output identifies strategic challenges and opportunities",
+        "type": "semantic"
+      },
+      {
+        "text": "Output proposes a strategic recommendation",
+        "type": "semantic"
+      },
+      {
+        "text": "Output outlines a 15-20 slide pitch deck structure",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes differentiators vs other agencies",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-005-run-1.md",
+    "output_path": "evals/transcripts/eval-005-run-1-grading.json"
+  },
+  {
+    "eval_id": "eval-006",
+    "run_n": 1,
+    "expectations": [
+      {
+        "text": "Output identifies at least 5 distinct crisis scenarios",
+        "type": "semantic"
+      },
+      {
+        "text": "Output provides a holding statement for each scenario",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes stakeholder mapping for crisis response",
+        "type": "semantic"
+      },
+      {
+        "text": "Output defines escalation protocols",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes a crisis response team structure",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-006-run-1.md",
+    "output_path": "evals/transcripts/eval-006-run-1-grading.json"
+  },
+  {
+    "eval_id": "eval-007",
+    "run_n": 1,
+    "expectations": [
+      {
+        "text": "Output uses 4-level measurement framework (outputs, outcomes, impact, ROI)",
+        "type": "semantic"
+      },
+      {
+        "text": "Output defines specific KPIs for each level",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes benchmark data where applicable",
+        "type": "semantic"
+      },
+      {
+        "text": "Output proposes measurement tools/methods",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes a dashboard template structure",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-007-run-1.md",
+    "output_path": "evals/transcripts/eval-007-run-1-grading.json"
+  },
+  {
+    "eval_id": "eval-008",
+    "run_n": 1,
+    "expectations": [
+      {
+        "text": "Output analyzes at least 3 competitors",
+        "type": "semantic"
+      },
+      {
+        "text": "Output identifies each competitor's positioning and messaging",
+        "type": "semantic"
+      },
+      {
+        "text": "Output describes recent campaigns by competitors",
+        "type": "semantic"
+      },
+      {
+        "text": "Output identifies white space/opportunity areas",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes channel and audience gaps",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-008-run-1.md",
+    "output_path": "evals/transcripts/eval-008-run-1-grading.json"
+  },
+  {
+    "eval_id": "eval-001",
+    "run_n": 2,
+    "expectations": [
+      {
+        "text": "Output includes a clear business challenge statement",
+        "type": "semantic"
+      },
+      {
+        "text": "Output defines the communications challenge",
+        "type": "semantic"
+      },
+      {
+        "text": "Output identifies the target audience with tensions and motivations",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes a core insight",
+        "type": "semantic"
+      },
+      {
+        "text": "Output proposes an idea territory",
+        "type": "semantic"
+      },
+      {
+        "text": "Output does NOT use slop phrases like '360\u00b0' or 'innovative'",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-001-run-2.md",
+    "output_path": "evals/transcripts/eval-001-run-2-grading.json"
+  },
+  {
+    "eval_id": "eval-002",
+    "run_n": 2,
+    "expectations": [
+      {
+        "text": "Output identifies at least 2 distinct audience segments",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes tensions and pain points for each segment",
+        "type": "semantic"
+      },
+      {
+        "text": "Output describes media consumption habits",
+        "type": "semantic"
+      },
+      {
+        "text": "Output identifies decision drivers for EV purchase",
+        "type": "semantic"
+      },
+      {
+        "text": "Output avoids generic demographics; includes psychographics",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-002-run-2.md",
+    "output_path": "evals/transcripts/eval-002-run-2-grading.json"
+  },
+  {
+    "eval_id": "eval-003",
+    "run_n": 2,
+    "expectations": [
+      {
+        "text": "Output includes a primary claim/message",
+        "type": "semantic"
+      },
+      {
+        "text": "Output has at least 3 supporting message pillars",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes proof points for each pillar",
+        "type": "semantic"
+      },
+      {
+        "text": "Output differentiates from competitors",
+        "type": "semantic"
+      },
+      {
+        "text": "Output is tailored to HR Director persona",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-003-run-2.md",
+    "output_path": "evals/transcripts/eval-003-run-2-grading.json"
+  },
+  {
+    "eval_id": "eval-004",
+    "run_n": 2,
+    "expectations": [
+      {
+        "text": "Output includes a campaign concept/theme",
+        "type": "semantic"
+      },
+      {
+        "text": "Output uses PESO framework (Paid, Earned, Shared, Owned)",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes a phased timeline",
+        "type": "semantic"
+      },
+      {
+        "text": "Output allocates budget across channels",
+        "type": "semantic"
+      },
+      {
+        "text": "Output defines success metrics per channel",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-004-run-2.md",
+    "output_path": "evals/transcripts/eval-004-run-2-grading.json"
+  },
+  {
+    "eval_id": "eval-005",
+    "run_n": 2,
+    "expectations": [
+      {
+        "text": "Output includes prospect situation analysis",
+        "type": "semantic"
+      },
+      {
+        "text": "Output identifies strategic challenges and opportunities",
+        "type": "semantic"
+      },
+      {
+        "text": "Output proposes a strategic recommendation",
+        "type": "semantic"
+      },
+      {
+        "text": "Output outlines a 15-20 slide pitch deck structure",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes differentiators vs other agencies",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-005-run-2.md",
+    "output_path": "evals/transcripts/eval-005-run-2-grading.json"
+  },
+  {
+    "eval_id": "eval-006",
+    "run_n": 2,
+    "expectations": [
+      {
+        "text": "Output identifies at least 5 distinct crisis scenarios",
+        "type": "semantic"
+      },
+      {
+        "text": "Output provides a holding statement for each scenario",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes stakeholder mapping for crisis response",
+        "type": "semantic"
+      },
+      {
+        "text": "Output defines escalation protocols",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes a crisis response team structure",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-006-run-2.md",
+    "output_path": "evals/transcripts/eval-006-run-2-grading.json"
+  },
+  {
+    "eval_id": "eval-007",
+    "run_n": 2,
+    "expectations": [
+      {
+        "text": "Output uses 4-level measurement framework (outputs, outcomes, impact, ROI)",
+        "type": "semantic"
+      },
+      {
+        "text": "Output defines specific KPIs for each level",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes benchmark data where applicable",
+        "type": "semantic"
+      },
+      {
+        "text": "Output proposes measurement tools/methods",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes a dashboard template structure",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-007-run-2.md",
+    "output_path": "evals/transcripts/eval-007-run-2-grading.json"
+  },
+  {
+    "eval_id": "eval-008",
+    "run_n": 2,
+    "expectations": [
+      {
+        "text": "Output analyzes at least 3 competitors",
+        "type": "semantic"
+      },
+      {
+        "text": "Output identifies each competitor's positioning and messaging",
+        "type": "semantic"
+      },
+      {
+        "text": "Output describes recent campaigns by competitors",
+        "type": "semantic"
+      },
+      {
+        "text": "Output identifies white space/opportunity areas",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes channel and audience gaps",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-008-run-2.md",
+    "output_path": "evals/transcripts/eval-008-run-2-grading.json"
+  },
+  {
+    "eval_id": "eval-001",
+    "run_n": 3,
+    "expectations": [
+      {
+        "text": "Output includes a clear business challenge statement",
+        "type": "semantic"
+      },
+      {
+        "text": "Output defines the communications challenge",
+        "type": "semantic"
+      },
+      {
+        "text": "Output identifies the target audience with tensions and motivations",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes a core insight",
+        "type": "semantic"
+      },
+      {
+        "text": "Output proposes an idea territory",
+        "type": "semantic"
+      },
+      {
+        "text": "Output does NOT use slop phrases like '360\u00b0' or 'innovative'",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-001-run-3.md",
+    "output_path": "evals/transcripts/eval-001-run-3-grading.json"
+  },
+  {
+    "eval_id": "eval-002",
+    "run_n": 3,
+    "expectations": [
+      {
+        "text": "Output identifies at least 2 distinct audience segments",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes tensions and pain points for each segment",
+        "type": "semantic"
+      },
+      {
+        "text": "Output describes media consumption habits",
+        "type": "semantic"
+      },
+      {
+        "text": "Output identifies decision drivers for EV purchase",
+        "type": "semantic"
+      },
+      {
+        "text": "Output avoids generic demographics; includes psychographics",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-002-run-3.md",
+    "output_path": "evals/transcripts/eval-002-run-3-grading.json"
+  },
+  {
+    "eval_id": "eval-003",
+    "run_n": 3,
+    "expectations": [
+      {
+        "text": "Output includes a primary claim/message",
+        "type": "semantic"
+      },
+      {
+        "text": "Output has at least 3 supporting message pillars",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes proof points for each pillar",
+        "type": "semantic"
+      },
+      {
+        "text": "Output differentiates from competitors",
+        "type": "semantic"
+      },
+      {
+        "text": "Output is tailored to HR Director persona",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-003-run-3.md",
+    "output_path": "evals/transcripts/eval-003-run-3-grading.json"
+  },
+  {
+    "eval_id": "eval-004",
+    "run_n": 3,
+    "expectations": [
+      {
+        "text": "Output includes a campaign concept/theme",
+        "type": "semantic"
+      },
+      {
+        "text": "Output uses PESO framework (Paid, Earned, Shared, Owned)",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes a phased timeline",
+        "type": "semantic"
+      },
+      {
+        "text": "Output allocates budget across channels",
+        "type": "semantic"
+      },
+      {
+        "text": "Output defines success metrics per channel",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-004-run-3.md",
+    "output_path": "evals/transcripts/eval-004-run-3-grading.json"
+  },
+  {
+    "eval_id": "eval-005",
+    "run_n": 3,
+    "expectations": [
+      {
+        "text": "Output includes prospect situation analysis",
+        "type": "semantic"
+      },
+      {
+        "text": "Output identifies strategic challenges and opportunities",
+        "type": "semantic"
+      },
+      {
+        "text": "Output proposes a strategic recommendation",
+        "type": "semantic"
+      },
+      {
+        "text": "Output outlines a 15-20 slide pitch deck structure",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes differentiators vs other agencies",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-005-run-3.md",
+    "output_path": "evals/transcripts/eval-005-run-3-grading.json"
+  },
+  {
+    "eval_id": "eval-006",
+    "run_n": 3,
+    "expectations": [
+      {
+        "text": "Output identifies at least 5 distinct crisis scenarios",
+        "type": "semantic"
+      },
+      {
+        "text": "Output provides a holding statement for each scenario",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes stakeholder mapping for crisis response",
+        "type": "semantic"
+      },
+      {
+        "text": "Output defines escalation protocols",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes a crisis response team structure",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-006-run-3.md",
+    "output_path": "evals/transcripts/eval-006-run-3-grading.json"
+  },
+  {
+    "eval_id": "eval-007",
+    "run_n": 3,
+    "expectations": [
+      {
+        "text": "Output uses 4-level measurement framework (outputs, outcomes, impact, ROI)",
+        "type": "semantic"
+      },
+      {
+        "text": "Output defines specific KPIs for each level",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes benchmark data where applicable",
+        "type": "semantic"
+      },
+      {
+        "text": "Output proposes measurement tools/methods",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes a dashboard template structure",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-007-run-3.md",
+    "output_path": "evals/transcripts/eval-007-run-3-grading.json"
+  },
+  {
+    "eval_id": "eval-008",
+    "run_n": 3,
+    "expectations": [
+      {
+        "text": "Output analyzes at least 3 competitors",
+        "type": "semantic"
+      },
+      {
+        "text": "Output identifies each competitor's positioning and messaging",
+        "type": "semantic"
+      },
+      {
+        "text": "Output describes recent campaigns by competitors",
+        "type": "semantic"
+      },
+      {
+        "text": "Output identifies white space/opportunity areas",
+        "type": "semantic"
+      },
+      {
+        "text": "Output includes channel and audience gaps",
+        "type": "semantic"
+      }
+    ],
+    "transcript_path": "evals/transcripts/eval-008-run-3.md",
+    "output_path": "evals/transcripts/eval-008-run-3-grading.json"
+  }
+]

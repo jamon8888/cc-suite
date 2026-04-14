@@ -1,7 +1,6 @@
 ---
 name: landing-page-builder
-deprecated: true
-replaced_by: copywriter plugin
+description: "deprecated — moved to copywriter plugin"
 ---
 # Skill: landing-page-builder — Moved to Copywriter
 

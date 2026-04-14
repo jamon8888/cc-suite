@@ -1,4 +1,5 @@
 ---
+name: solo:clients
 description: "Manage clients and sales pipeline — track deals, log interactions, monitor health"
 argument-hint: "[add | review | pipeline | follow-up]"
 allowed-tools: Read, Write, Glob

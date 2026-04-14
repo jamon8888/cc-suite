@@ -69,3 +69,14 @@ Describe a decision. Sentinel handles the rest.
 - Inhibition check integrated into MAP (structure IS the inhibition)
 - Honest limitation disclaimer built into the protocol
 - 44 files -> 41 files (removed redundant agents, kept substance)
+
+
+## Scheduled Task Setup
+
+To enable the weekly calibration review (not automatable via hooks in Cowork):
+
+1. Claude Desktop → left sidebar → Scheduled → New Task
+2. Command: `/sentinel-review`
+3. Cadence: every Monday at 09:00
+
+This surfaces unresolved predictions from the decision ledger each week.
