@@ -1,0 +1,20 @@
+{
+  "name": "linkedin",
+  "version": "1.0.0",
+  "description": "LinkedIn growth engine. Chrome-native content pipeline: generate, queue, post, analyze, learn. Strategic commenting, competitor monitoring, autoresearch. Shared identity with copywriter plugin.",
+  "author": {
+    "name": "NMarchitecte"
+  },
+  "license": "MIT",
+  "keywords": [
+    "linkedin",
+    "social-media",
+    "content-pipeline",
+    "chrome-automation",
+    "growth-engine",
+    "virality",
+    "engagement",
+    "competitor-monitoring",
+    "autoresearch"
+  ]
+}

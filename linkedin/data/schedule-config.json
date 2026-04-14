@@ -1,0 +1,8 @@
+{
+  "auto_post_mode": "confirm",
+  "notify_on_post": true,
+  "scrape_interval_hours": 6,
+  "research_interval_hours": 8,
+  "competitor_scan_time": "20:00",
+  "learning_cycle_time": "02:00"
+}

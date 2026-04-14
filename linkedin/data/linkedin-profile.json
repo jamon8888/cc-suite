@@ -1,0 +1,19 @@
+{
+  "profile_url": "",
+  "display_name": "",
+  "headline": "",
+  "follower_count": 0,
+  "content_pillars": [],
+  "posting_config": {
+    "timezone": "Europe/Paris",
+    "active_days": [0, 1, 2, 3, 4],
+    "posting_slots": ["08:30", "12:00", "18:00"],
+    "posts_per_day": 1,
+    "hashtag_count": 3,
+    "emoji_policy": "minimal"
+  },
+  "commenting_config": {
+    "daily_target": 15,
+    "max_per_post": 1
+  }
+}

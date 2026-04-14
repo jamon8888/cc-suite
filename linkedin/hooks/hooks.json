@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Read ${CLAUDE_PLUGIN_ROOT}/data/linkedin-profile.json. If empty or the file has no display_name, suggest /linkedin:start. Otherwise: 1) Detect copywriter plugin — Glob for copywriter/.claude-plugin/plugin.json relative to CLAUDE_PLUGIN_ROOT parent. If found, read copywriter/data/voice-dna.json and use language_preference for output language. Default to French. 2) Read ${CLAUDE_PLUGIN_ROOT}/data/queue.json — count posts by status. Read ${CLAUDE_PLUGIN_ROOT}/data/comment-targets.json — check today's progress. Read ${CLAUDE_PLUGIN_ROOT}/data/schedule-config.json for next posting slot. 3) Show quick status: posts in queue (by status), today's comment count vs target, next scheduled post time. 4) Read ${CLAUDE_PLUGIN_ROOT}/data/learnings.json — if prompt_directives array is non-empty, mention: 'Nouveaux apprentissages disponibles: [count] directives actives.' 5) If comment-targets shows < 10 comments today, nudge: 'Tu as commente [N]/[target] posts aujourd'hui. Lance /linkedin:commenter pour continuer.'",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

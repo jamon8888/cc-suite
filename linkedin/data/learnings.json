@@ -1,0 +1,19 @@
+{
+  "last_analysis": null,
+  "prompt_directives": [],
+  "patterns": {
+    "top_performing": {
+      "hooks": [],
+      "tones": [],
+      "templates": [],
+      "cta_types": [],
+      "word_count_range": [150, 250]
+    },
+    "underperforming": {
+      "hooks": [],
+      "tones": [],
+      "templates": [],
+      "avoid_topics": []
+    }
+  }
+}
