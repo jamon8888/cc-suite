@@ -18,7 +18,7 @@ Ce n'est pas un outil pour postuler en masse. C'est un filtre : il vous aide à 
 
 - Node.js 18+
 - Claude Code ou OpenCode
-- Playwright (`npx playwright install chromium`) — pour la génération PDF et le scraping
+- Playwright — pour la génération PDF, le scraping et l'automatisation navigateur
 
 ---
 
@@ -32,6 +32,9 @@ cd cc-suite/job-os
 # Installer les dépendances
 npm install
 npx playwright install chromium
+
+# (Optionnel) Plugin anti-détection pour le scan de portails
+npm install playwright-extra playwright-extra-plugin-stealth
 
 # Vérifier que tout est en ordre
 npm run doctor
@@ -167,6 +170,40 @@ language:
   primary: en      # ou de, ja, pt, ru
   modes_dir: modes/  # ou modes/de, modes/ja...
 ```
+
+---
+
+## Automatisation navigateur
+
+Job-OS utilise Playwright pour trois usages distincts, avec des stratégies anti-détection adaptées à chaque cas.
+
+### Scan de portails
+
+Playwright scrape les pages carrières pour découvrir de nouvelles offres. Pour éviter les blocages Cloudflare ou anti-bot :
+
+```bash
+npm install playwright-extra playwright-extra-plugin-stealth
+```
+
+Le plugin stealth corrige les principales fuites détectables (`webdriver`, Canvas, WebGL, navigator plugins). Suffisant pour la grande majorité des portails.
+
+### Génération PDF
+
+Playwright rend le template HTML du CV en PDF via Chromium headless. Pas de problème de détection ici — aucune session externe impliquée.
+
+### Envoi de messages et soumission de candidatures
+
+Pour les actions qui nécessitent d'être connecté (envoyer un message LinkedIn, soumettre un formulaire), Job-OS utilise **votre profil Chrome réel** plutôt qu'un Chromium isolé :
+
+```js
+// Job-OS lance Chrome avec votre session existante
+// → LinkedIn, Indeed, Welcome to the Jungle déjà connectés
+// → fingerprint 100% réel, pratiquement indétectable
+```
+
+Cela signifie que si vous êtes connecté à LinkedIn dans Chrome, Job-OS peut envoyer un message directement — sans jamais avoir besoin de vos identifiants.
+
+**Confirmation obligatoire** avant chaque envoi : le système affiche le message rédigé et attend votre validation explicite avant d'agir. Vous gardez le dernier mot.
 
 ---
 
