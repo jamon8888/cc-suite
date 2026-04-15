@@ -159,8 +159,55 @@ Available language packs:
 ### CV Source of Truth
 
 - `cv.md` in project root is the canonical CV
+- `cv-{track-id}.md` for track-specific CVs (e.g. `cv-ai-engineer.md`, `cv-ux-designer.md`)
 - `article-digest.md` has detailed proof points (optional)
 - **NEVER hardcode metrics** -- read them from these files at evaluation time
+
+---
+
+## Browser Automation — browser.mjs
+
+`browser.mjs` automates browser actions using the user's real Chrome profile (existing sessions included). Always run a confirmation check before executing.
+
+### Available commands
+
+```bash
+# Send a LinkedIn message (to an existing connection)
+node browser.mjs linkedin-message --to <profile-url> --text "message" [--dry-run]
+
+# Send a LinkedIn connection request with a note
+node browser.mjs linkedin-connect --to <profile-url> --note "note" [--dry-run]
+
+# Fill and submit a job application form
+node browser.mjs apply --url <form-url> --fields '{"selector":"value"}' [--dry-run]
+
+# Check if the user is logged in to a platform
+node browser.mjs check-login --platform linkedin|indeed|wttj|apec
+```
+
+### Output format
+
+All commands output JSON:
+```json
+{ "status": "sent|dry-run|cancelled|manual|error", "message": "..." }
+```
+
+### Usage rules
+
+1. **Always run `check-login` first** before any authenticated action.
+2. **Always use `--dry-run`** to preview before sending for the first time with a new user.
+3. **Never automate bulk sending** — one message at a time, with confirmation each time.
+4. **Chrome profile path** is auto-detected. Override with `--profile /path/to/profile`.
+5. **PDF uploads** are not automated — instruct the user to upload manually from `output/`.
+
+### When to use
+
+| User action | Command |
+|-------------|---------|
+| "Envoyer ce message à [personne]" | `linkedin-message` |
+| "Demande de connexion à [personne]" | `linkedin-connect` |
+| "Soumettre ma candidature" | `apply` |
+| "Suis-je connecté à LinkedIn ?" | `check-login` |
 
 ---
 

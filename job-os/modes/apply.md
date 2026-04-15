@@ -1,107 +1,136 @@
-# Modo: apply — Asistente de Aplicación en Vivo
+# Mode : apply — Assistant de candidature
 
-Modo interactivo para cuando el candidato está rellenando un formulario de aplicación en Chrome. Lee lo que hay en pantalla, carga el contexto previo de la offre, y genera respuestas personalizadas para cada pregunta del formulario.
-
-## Requisitos
-
-- **Mejor con Playwright visible**: En modo visible, el candidato ve el navegador y Claude puede interactuar con la página.
-- **Sin Playwright**: el candidato comparte un screenshot o pega las preguntas manualmente.
-
-## Workflow
-
-```
-1. DETECTAR    → Leer Chrome tab activa (screenshot/URL/título)
-2. IDENTIFICAR → Extraer empresa + rol de la página
-3. BUSCAR      → Match contra reports existentes en reports/
-4. CARGAR      → Leer report completo + Section G (si existe)
-5. COMPARAR    → ¿El rol en pantalla coincide con el evaluado? Si cambió → avisar
-6. ANALIZAR    → Identificar TODAS las preguntas del formulario visibles
-7. GENERAR     → Para cada pregunta, generar respuesta personalizada
-8. PRESENTAR   → Mostrar respuestas formateadas para copy-paste
-```
-
-## Paso 1 — Detectar la offre
-
-**Con Playwright:** Tomar snapshot de la página activa. Leer título, URL, y contenido visible.
-
-**Sin Playwright:** Pedir al candidato que:
-- Comparta un screenshot del formulario (Read tool lee imágenes)
-- O pegue las preguntas del formulario como texto
-- O diga empresa + rol para que lo busquemos
-
-## Paso 2 — Identificar y buscar contexto
-
-1. Extraer nombre de empresa y título del rol de la página
-2. Buscar en `reports/` por nombre de empresa (Grep case-insensitive)
-3. Si hay match → cargar el report completo
-4. Si hay Section G → cargar los draft answers previos como base
-5. Si NO hay match → avisar y ofrecer ejecutar auto-pipeline rápido
-
-## Paso 3 — Detectar cambios en el rol
-
-Si el rol en pantalla difiere del evaluado:
-- **Avisar al candidato**: "El rol ha cambiado de [X] a [Y]. ¿Quieres que re-evalúe o adapto las respuestas al nuevo título?"
-- **Si adaptar**: Ajustar las respuestas al nuevo rol sin re-evaluar
-- **Si re-evaluar**: Ejecutar evaluación A-F completa, actualizar report, regenerar Section G
-- **Actualizar tracker**: Cambiar título del rol en applications.md si procede
-
-## Paso 4 — Analizar preguntas del formulario
-
-Identificar TODAS las preguntas visibles:
-- Campos de texto libre (cover letter, why this role, etc.)
-- Dropdowns (how did you hear, work authorization, etc.)
-- Yes/No (relocation, visa, etc.)
-- Campos de salario (range, expectation)
-- Upload fields (resume, cover letter PDF)
-
-Clasificar cada pregunta:
-- **Ya respondida en Section G** → adaptar la respuesta existente
-- **Nueva pregunta** → generar respuesta desde el report + cv.md
-
-## Paso 5 — Generar respuestas
-
-Para cada pregunta, generar la respuesta siguiendo:
-
-1. **Contexto del report**: Usar proof points del bloque B, historias STAR del bloque F
-2. **Section G previa**: Si existe una respuesta draft, usarla como base y refinar
-3. **Tono "I'm choosing you"**: Mismo framework del auto-pipeline
-4. **Especificidad**: Referenciar algo concreto del JD visible en pantalla
-5. **job-os proof point**: Incluir en "Additional info" si hay campo para ello
-
-**Formato de output:**
-
-```
-## Respuestas para [Empresa] — [Rol]
-
-Basado en: Report #NNN | Score: X.X/5 | Arquetipo: [tipo]
+Assiste la soumission d'une candidature : lit le formulaire en ligne, charge le contexte du rapport d'évaluation existant, génère les réponses personnalisées, puis remplit et soumet le formulaire via le profil Chrome.
 
 ---
 
-### 1. [Pregunta exacta del formulario]
-> [Respuesta lista para copy-paste]
+## Étape 1 — Détecter l'offre
 
-### 2. [Siguiente pregunta]
-> [Respuesta]
+**Avec Playwright :** snapshot de la page active → extraire titre, URL, contenu visible.
 
-...
+**Sans Playwright :** demander à l'utilisateur de :
+- Partager un screenshot du formulaire
+- Coller les questions manuellement
+- Indiquer entreprise + rôle pour recherche manuelle
 
 ---
 
-Notas:
-- [Cualquier observación sobre el rol, cambios, etc.]
-- [Sugerencias de personalización que el candidato debería revisar]
+## Étape 2 — Charger le contexte
+
+1. Extraire nom de l'entreprise et titre du rôle
+2. Chercher dans `reports/` (Grep insensible à la casse sur le nom de l'entreprise)
+3. Si match → charger le rapport complet
+4. Si Section G présente → utiliser les réponses draft comme base
+5. Si pas de match → proposer de lancer l'auto-pipeline d'abord
+
+---
+
+## Étape 3 — Vérifier le rôle
+
+Si le rôle à l'écran diffère de celui évalué :
+- Signaler : "Le rôle a changé de [X] à [Y]. Adapter les réponses ou ré-évaluer ?"
+- **Adapter** : ajuster sans ré-évaluer
+- **Ré-évaluer** : lancer l'évaluation A-F, mettre à jour le rapport, régénérer la Section G
+- Mettre à jour le titre dans `applications.md` si nécessaire
+
+---
+
+## Étape 4 — Analyser le formulaire
+
+Identifier TOUTES les questions visibles :
+- Champs texte libre (lettre de motivation, "pourquoi ce rôle", etc.)
+- Dropdowns (source, autorisation de travail, etc.)
+- Oui/Non (relocalisation, visa, etc.)
+- Champs salaire
+- Uploads (CV, lettre de motivation PDF)
+
+Classifier chaque question :
+- **Déjà en Section G** → adapter la réponse existante
+- **Nouvelle question** → générer depuis le rapport + `cv-{track}.md`
+
+---
+
+## Étape 5 — Générer les réponses
+
+Pour chaque question :
+
+1. **Blocs B et F du rapport** : proof points, stories STAR+R
+2. **Section G existante** : base à raffiner si disponible
+3. **Ton "je vous choisis"** : spécificité sur le JD, pas générique
+4. **Sélecteur CSS** : identifier le sélecteur HTML du champ pour l'automatisation
+
+Format de sortie :
+
+```
+## Réponses — {Entreprise} / {Rôle}
+Rapport : #{NNN} | Score : {X.X}/5 | Track : {track}
+
+---
+
+### 1. {Question exacte du formulaire}
+Sélecteur : {selector CSS ou xpath}
+> {Réponse prête à copier-coller}
+
+### 2. {Question suivante}
+Sélecteur : {selector}
+> {Réponse}
+
+---
+
+Notes :
+- {Observations sur le rôle, ajustements suggérés}
 ```
 
-## Paso 6 — Post-apply (opcional)
+---
 
-Si el candidato confirma que envió la aplicación:
-1. Actualizar estado en `applications.md` de "Evaluada" a "Aplicado"
-2. Actualizar Section G del report con las respuestas finales
-3. Sugerir siguiente paso: `/job-os message` para LinkedIn outreach
+## Étape 6 — Remplissage automatique
 
-## Scroll handling
+Construire le JSON de champs à partir des sélecteurs identifiés :
 
-Si el formulario tiene más preguntas que las visibles:
-- Pedir al candidato que haga scroll y comparta otro screenshot
-- O que pegue las preguntas restantes
-- Procesar en iteraciones hasta cubrir todo el formulario
+```bash
+node browser.mjs apply \
+  --url "{url-formulaire}" \
+  --fields '{
+    "#cover-letter": "Votre lettre de motivation...",
+    "#why-us": "Ce qui m attire chez vous...",
+    "select[name=heard]": "LinkedIn"
+  }'
+```
+
+**Avant d'exécuter :**
+
+1. Vérifier la connexion à la plateforme :
+```bash
+node browser.mjs check-login --platform linkedin
+# ou : indeed | wttj | apec
+```
+
+2. Si non connecté → demander à l'utilisateur de se connecter dans Chrome.
+
+3. Parser la sortie JSON :
+   - `status: "sent"` → candidature soumise, passer à l'étape 7
+   - `status: "manual"` → formulaire rempli, soumission manuelle par l'utilisateur
+   - `status: "cancelled"` → ne rien faire
+   - `status: "error"` → afficher l'erreur + proposer le copier-coller manuel
+
+**Note sur les uploads PDF :** le script ne gère pas encore les uploads de fichiers. Si le formulaire demande un PDF, indiquer à l'utilisateur d'uploader manuellement `output/{num}-{slug}.pdf` une fois le navigateur ouvert.
+
+---
+
+## Étape 7 — Post-soumission
+
+Une fois la candidature envoyée (automatique ou manuelle) :
+
+1. Mettre à jour `applications.md` : statut `Évalué` → `Candidaté`
+2. Enregistrer les réponses finales en Section G du rapport
+3. Proposer `/job-os message` pour envoyer un message au recruteur ou hiring manager
+
+---
+
+## Mode dry-run
+
+Pour prévisualiser sans ouvrir le navigateur :
+
+```bash
+node browser.mjs apply --url "{url}" --fields '{...}' --dry-run
+```

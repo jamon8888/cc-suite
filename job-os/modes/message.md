@@ -1,53 +1,127 @@
-# Modo: message -- LinkedIn Power Move
+# Mode : message — Prise de contact LinkedIn
 
-1. **Identificar targets** via WebSearch:
-   - Hiring manager del equipo
-   - Recruiter asignado
-   - 2-3 peers del equipo (gente con rol similar)
-   - Interviewer (si el candidato ya tiene entrevista programada)
+Recherche les bons interlocuteurs pour une offre, rédige un message court et percutant, puis l'envoie directement via le profil Chrome de l'utilisateur.
 
-2. **Clasificar tipo de message** -- preguntar al candidato o inferir del contexto:
-   - **Recruiter** -- persona cuyo rol es talent acquisition, sourcing, o recruiting
-   - **Hiring Manager** -- la persona que lidera el equipo que contrata
-   - **Peer** -- alguien con un rol similar en el equipo (referral indirecto)
-   - **Interviewer** -- alguien que va a entrevistar al candidato (fecha conocida)
+---
 
-3. **Seleccionar target primario**: la persona que mas se beneficiaria de que el candidato estuviera alli
+## Étape 1 — Identifier les cibles
 
-4. **Generar mensaje** con framework de 3 frases adaptado al tipo de message:
+Via WebSearch, trouver pour l'entreprise cible :
 
-   ### Recruiter
-   - **Frase 1 (Fit)**: Criterios de match directo -- rol, experiencia relevante, disponibilidad o ubicacion
-   - **Frase 2 (Prueba)**: Dato que responda sus preguntas de screening antes de que las hagan (ej: "5 years building ML pipelines, currently in Berlin, available immediately")
-   - **Frase 3 (CTA)**: "Happy to share my CV if this aligns with what you're looking for"
+- **Recruteur** — talent acquisition, sourcing, recruiter (priorité si le poste vient d'ouvrir)
+- **Hiring manager** — responsable de l'équipe qui recrute (priorité si le poste est ouvert depuis >2 semaines)
+- **Pair** — quelqu'un avec un rôle similaire dans l'équipe (pour referral indirect)
+- **Intervieweur** — si un entretien est déjà planifié
 
-   ### Hiring Manager
-   - **Frase 1 (Gancho)**: Reto especifico que enfrenta su equipo (extraido del JD, company blog, o noticias)
-   - **Frase 2 (Prueba)**: Mayor logro cuantificable del candidato que demuestre que ha resuelto problemas similares
-   - **Frase 3 (CTA)**: "Would love to hear how your team is approaching [reto especifico]"
+Sélectionner **une cible principale** : la personne qui bénéficierait le plus de connaître le candidat.
 
-   ### Peer (referral)
-   - **Frase 1 (Interes)**: Referencia genuina a su trabajo -- blog post, charla, proyecto open source, o publicacion
-   - **Frase 2 (Conexion)**: Algo que el candidato esta haciendo en el mismo espacio (NO un pitch de empleo)
-   - **Frase 3 (CTA)**: "I've been working on similar problems at [empresa], would love to hear your take on [tema]"
-   - **Nota**: NO pedir empleo. La referral ocurre naturalmente si la conversacion fluye.
+---
 
-   ### Interviewer (pre-entrevista)
-   - **Frase 1 (Research)**: Referencia a algo especifico de su trabajo o trayectoria
-   - **Frase 2 (Contexto)**: Conexion ligera con la experiencia del candidato en ese tema
-   - **Frase 3 (CTA)**: "Looking forward to our conversation on [fecha]"
-   - **Nota**: Tono ligero, no desesperado. El objetivo es que sepan que te preparaste.
+## Étape 2 — Rédiger le message
 
-5. **Versiones**:
-   - EN (default)
-   - ES (si empresa espanola)
+**Contrainte absolue : 300 caractères maximum** (limite LinkedIn pour les demandes de connexion).
 
-6. **Targets alternativos** con justificacion de por que son buenos second choices
+Framework 3 phrases adapté à la cible :
 
-**Reglas del mensaje:**
-- Maximo 300 caracteres (LinkedIn connection request limit)
-- NO corporate-speak
-- NO "I'm passionate about..."
-- Algo que haga que quieran responder
-- NUNCA compartir telefono
-- El tipo de message cambia el ENFASIS, no la estructura
+### Recruteur
+- **Phrase 1 (Fit direct)** : match rôle + expérience + disponibilité/localisation
+- **Phrase 2 (Preuve)** : donnée qui répond aux questions de screening avant qu'elles soient posées
+- **Phrase 3 (CTA)** : "Je vous envoie mon CV si le profil correspond."
+
+### Hiring Manager
+- **Phrase 1 (Accroche)** : défi spécifique de son équipe (tiré du JD, blog, actualités)
+- **Phrase 2 (Preuve)** : meilleure réalisation quantifiable en lien avec ce défi
+- **Phrase 3 (CTA)** : "Curieux d'entendre comment votre équipe aborde [défi]."
+
+### Pair (referral indirect)
+- **Phrase 1 (Intérêt)** : référence genuïne à son travail — article, talk, projet open source
+- **Phrase 2 (Connexion)** : ce que le candidat fait dans le même espace (pas un pitch d'emploi)
+- **Phrase 3 (CTA)** : "Je travaille sur des problèmes similaires, curieux de votre retour sur [sujet]."
+- **Règle** : ne pas mentionner le poste. Le referral vient naturellement si la conversation s'engage.
+
+### Intervieweur (pré-entretien)
+- **Phrase 1 (Recherche)** : référence à quelque chose de spécifique dans son parcours
+- **Phrase 2 (Contexte)** : lien léger avec l'expérience du candidat
+- **Phrase 3 (CTA)** : "À bientôt pour notre échange le [date]."
+- **Ton** : léger, pas désespéré. L'objectif est qu'il sache que vous vous êtes préparé.
+
+**Règles d'écriture :**
+- Pas de corporate-speak
+- Pas de "Je suis passionné par..."
+- Pas de liste à puces dans le message
+- Langue : français par défaut, anglais si l'interlocuteur est dans un contexte anglophone
+
+---
+
+## Étape 3 — Présenter et valider
+
+Afficher :
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📩 Message rédigé ({N} caractères / 300)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{texte du message}
+
+📍 Cible : {prénom nom} — {titre} chez {entreprise}
+🔗 Profil : {url LinkedIn}
+
+Options :
+  1. Envoyer maintenant via Chrome
+  2. Envoyer une demande de connexion avec cette note
+  3. Modifier le message
+  4. Copier-coller manuellement
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+---
+
+## Étape 4 — Envoi automatique (si option 1 ou 2)
+
+**Option 1 — Message direct** (si déjà connecté avec la cible) :
+
+```bash
+node browser.mjs linkedin-message \
+  --to "{url-profil}" \
+  --text "{message}"
+```
+
+**Option 2 — Demande de connexion avec note** :
+
+```bash
+node browser.mjs linkedin-connect \
+  --to "{url-profil}" \
+  --note "{message}"
+```
+
+**Avant d'exécuter :**
+
+1. Vérifier que l'utilisateur est connecté à LinkedIn :
+```bash
+node browser.mjs check-login --platform linkedin
+```
+
+2. Si `status: "not-logged-in"` → demander à l'utilisateur de se connecter dans Chrome, puis réessayer.
+
+3. Parser la sortie JSON du script :
+   - `status: "sent"` → confirmer l'envoi à l'utilisateur
+   - `status: "cancelled"` → ne rien faire
+   - `status: "error"` → afficher le message d'erreur + proposer le copier-coller manuel
+
+---
+
+## Étape 5 — Cibles alternatives
+
+Proposer 2 cibles de secours avec justification du choix.
+
+---
+
+## Mode dry-run
+
+Pour tester sans envoyer :
+
+```bash
+node browser.mjs linkedin-message --to "{url}" --text "{msg}" --dry-run
+```
+
+Affiche le message et la cible sans ouvrir le navigateur.
