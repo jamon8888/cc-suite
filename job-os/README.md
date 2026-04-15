@@ -193,17 +193,38 @@ Playwright rend le template HTML du CV en PDF via Chromium headless. Pas de prob
 
 ### Envoi de messages et soumission de candidatures
 
-Pour les actions qui nécessitent d'être connecté (envoyer un message LinkedIn, soumettre un formulaire), Job-OS utilise **votre profil Chrome réel** plutôt qu'un Chromium isolé :
+`browser.mjs` automatise les actions authentifiées en utilisant **votre profil Chrome réel** — sessions LinkedIn, Indeed, WTTJ déjà actives, fingerprint natif, pratiquement indétectable.
 
-```js
-// Job-OS lance Chrome avec votre session existante
-// → LinkedIn, Indeed, Welcome to the Jungle déjà connectés
-// → fingerprint 100% réel, pratiquement indétectable
+```bash
+# Vérifier que vous êtes connecté à LinkedIn
+node browser.mjs check-login --platform linkedin
+
+# Envoyer un message à une connexion existante
+node browser.mjs linkedin-message \
+  --to "https://linkedin.com/in/prenom-nom" \
+  --text "Bonjour, ..."
+
+# Envoyer une demande de connexion avec note
+node browser.mjs linkedin-connect \
+  --to "https://linkedin.com/in/prenom-nom" \
+  --note "Bonjour, ..."
+
+# Remplir et soumettre un formulaire de candidature
+node browser.mjs apply \
+  --url "https://jobs.ashby.com/..." \
+  --fields '{"#cover-letter": "...", "#why-us": "..."}'
+
+# Prévisualiser sans agir
+node browser.mjs linkedin-message --to "..." --text "..." --dry-run
 ```
 
-Cela signifie que si vous êtes connecté à LinkedIn dans Chrome, Job-OS peut envoyer un message directement — sans jamais avoir besoin de vos identifiants.
+Toutes les commandes sortent du JSON (`status: sent | dry-run | cancelled | error`) et demandent une **confirmation explicite** avant d'agir. Claude rédige, vous validez, le script envoie.
 
-**Confirmation obligatoire** avant chaque envoi : le système affiche le message rédigé et attend votre validation explicite avant d'agir. Vous gardez le dernier mot.
+| Usage | Stratégie | Détection |
+|-------|-----------|-----------|
+| Scan portails | playwright-extra-stealth | Très faible |
+| Génération PDF | Chromium headless standard | Aucune |
+| Messages / candidatures | Profil Chrome réel | Quasi nulle |
 
 ---
 
