@@ -1,4 +1,4 @@
-# Modo: contacto -- LinkedIn Power Move
+# Modo: message -- LinkedIn Power Move
 
 1. **Identificar targets** via WebSearch:
    - Hiring manager del equipo
@@ -6,7 +6,7 @@
    - 2-3 peers del equipo (gente con rol similar)
    - Interviewer (si el candidato ya tiene entrevista programada)
 
-2. **Clasificar tipo de contacto** -- preguntar al candidato o inferir del contexto:
+2. **Clasificar tipo de message** -- preguntar al candidato o inferir del contexto:
    - **Recruiter** -- persona cuyo rol es talent acquisition, sourcing, o recruiting
    - **Hiring Manager** -- la persona que lidera el equipo que contrata
    - **Peer** -- alguien con un rol similar en el equipo (referral indirecto)
@@ -14,7 +14,7 @@
 
 3. **Seleccionar target primario**: la persona que mas se beneficiaria de que el candidato estuviera alli
 
-4. **Generar mensaje** con framework de 3 frases adaptado al tipo de contacto:
+4. **Generar mensaje** con framework de 3 frases adaptado al tipo de message:
 
    ### Recruiter
    - **Frase 1 (Fit)**: Criterios de match directo -- rol, experiencia relevante, disponibilidad o ubicacion
@@ -50,4 +50,4 @@
 - NO "I'm passionate about..."
 - Algo que haga que quieran responder
 - NUNCA compartir telefono
-- El tipo de contacto cambia el ENFASIS, no la estructura
+- El tipo de message cambia el ENFASIS, no la estructura

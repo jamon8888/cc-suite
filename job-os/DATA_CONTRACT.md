@@ -35,7 +35,7 @@ These files contain system logic, scripts, templates, and instructions that impr
 | `modes/batch.md` | Batch processing instructions |
 | `modes/apply.md` | Application assistant instructions |
 | `modes/auto-pipeline.md` | Auto-pipeline instructions |
-| `modes/contacto.md` | LinkedIn outreach instructions |
+| `modes/message.md` | LinkedIn outreach instructions |
 | `modes/deep.md` | Research prompt instructions |
 | `modes/offres.md` | Comparison instructions |
 | `modes/pipeline.md` | Pipeline processing instructions |

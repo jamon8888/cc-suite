@@ -97,7 +97,7 @@ Notas:
 Si el candidato confirma que envió la aplicación:
 1. Actualizar estado en `applications.md` de "Evaluada" a "Aplicado"
 2. Actualizar Section G del report con las respuestas finales
-3. Sugerir siguiente paso: `/job-os contacto` para LinkedIn outreach
+3. Sugerir siguiente paso: `/job-os message` para LinkedIn outreach
 
 ## Scroll handling
 

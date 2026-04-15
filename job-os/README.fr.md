@@ -117,7 +117,7 @@ Career-ops est une commande unique avec plusieurs modes :
 /job-os tracker          → Voir l'état des candidatures
 /job-os apply            → Remplir les formulaires de candidature avec l'IA
 /job-os pipeline         → Traiter les URLs en attente
-/job-os contacto         → Message de prise de contact LinkedIn
+/job-os message         → Message de prise de contact LinkedIn
 /job-os deep             → Recherche approfondie sur l'entreprise
 /job-os training         → Évaluer une formation/certification
 /job-os project          → Évaluer un projet portfolio

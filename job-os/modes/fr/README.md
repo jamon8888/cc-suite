@@ -47,7 +47,7 @@ Cette premiere iteration couvre les quatre modes a plus fort impact :
 | `pipeline.md` | `modes/pipeline.md` (ES) | Inbox d'URLs / Second Brain pour les offres collectees |
 | `linkedin-scan.md` | *(nouveau)* | Scan LinkedIn interactif via outils navigateur (browser_navigate + browser_snapshot) |
 
-Les autres modes (`scan`, `batch`, `pdf`, `tracker`, `auto-pipeline`, `deep`, `contacto`, `offres`, `project`, `training`) restent en EN/ES. Leur contenu est surtout du tooling, des chemins et des commandes -- il doit rester independant de la langue.
+Les autres modes (`scan`, `batch`, `pdf`, `tracker`, `auto-pipeline`, `deep`, `message`, `offres`, `project`, `training`) restent en EN/ES. Leur contenu est surtout du tooling, des chemins et des commandes -- il doit rester independant de la langue.
 
 ## Ce qui reste en anglais
 

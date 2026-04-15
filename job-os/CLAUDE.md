@@ -76,7 +76,7 @@ When using [OpenCode](https://opencode.ai), the following slash commands are ava
 | `/job-os-pipeline` | `/job-os pipeline` | Process pending URLs from inbox |
 | `/job-os-evaluate` | `/job-os offre` | Evaluate job offer (A-F scoring) |
 | `/job-os-compare` | `/job-os offres` | Compare and rank multiple offers |
-| `/job-os-contact` | `/job-os contacto` | LinkedIn outreach (find contacts + draft) |
+| `/job-os-contact` | `/job-os message` | LinkedIn outreach (find contacts + draft) |
 | `/job-os-deep` | `/job-os deep` | Deep company research |
 | `/job-os-pdf` | `/job-os pdf` | Generate ATS-optimized CV |
 | `/job-os-training` | `/job-os training` | Evaluate course/cert against goals |
@@ -142,7 +142,7 @@ Available language packs:
 | Pastes JD or URL | auto-pipeline (evaluate + report + PDF + tracker) |
 | Asks to evaluate offer | `offre` |
 | Asks to compare offers | `offres` |
-| Wants LinkedIn outreach | `contacto` |
+| Wants LinkedIn outreach | `message` |
 | Asks for company research | `deep` |
 | Preps for interview at specific company | `interview-prep` |
 | Wants to generate CV/PDF | `pdf` |

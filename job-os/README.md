@@ -76,7 +76,7 @@ L'assistant se relance à tout moment via `/job-os setup` pour ajouter un track 
 /job-os tracker             Tableau de bord des candidatures
 /job-os batch               Évaluation parallèle avec des workers
 /job-os deep                Recherche approfondie sur une entreprise
-/job-os contacto            Rédiger un message de prise de contact LinkedIn
+/job-os message            Rédiger un message de prise de contact LinkedIn
 /job-os patterns            Analyser les patterns de rejet
 /job-os followup            Suivi des relances
 /job-os training            Évaluer une formation ou certification
