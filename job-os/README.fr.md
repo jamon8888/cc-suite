@@ -327,7 +327,7 @@ job-os/
 │   └── profile.example.yml      # Template de profil (copier vers profile.yml)
 ├── modes/                       # Modes en anglais
 │   ├── _shared.md               # Contexte partagé
-│   ├── oferta.md                # Évaluation unique
+│   ├── offre.md                # Évaluation unique
 │   └── ...
 ├── modes/fr/                    # Modes en français
 │   ├── _shared.md               # Contexte partagé FR

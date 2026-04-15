@@ -3,7 +3,7 @@ name: job-os
 description: AI job search command center -- evaluate offers, generate CVs, scan portals, track applications
 user_invocable: true
 args: mode
-argument-hint: "[setup | scan | deep | pdf | oferta | ofertas | apply | batch | tracker | pipeline | contacto | training | project | interview-prep | update]"
+argument-hint: "[setup | scan | deep | pdf | offre | offres | apply | batch | tracker | pipeline | contacto | training | project | interview-prep | update]"
 ---
 
 # job-os -- Router
@@ -17,8 +17,8 @@ Determine the mode from `{{mode}}`:
 | (empty / no args) | `discovery` -- Show command menu |
 | JD text or URL (no sub-command) | **`auto-pipeline`** |
 | `setup` | `setup` |
-| `oferta` | `oferta` |
-| `ofertas` | `ofertas` |
+| `offre` | `offre` |
+| `offres` | `offres` |
 | `contacto` | `contacto` |
 | `deep` | `deep` |
 | `pdf` | `pdf` |
@@ -49,8 +49,8 @@ Available commands:
   /job-os {JD}      → AUTO-PIPELINE: evaluate + report + PDF + tracker (paste text or URL)
   /job-os setup     → Onboarding wizard: configure tracks, CVs, profile, portals
   /job-os pipeline  → Process pending URLs from inbox (data/pipeline.md)
-  /job-os oferta    → Evaluation only A-F (no auto PDF)
-  /job-os ofertas   → Compare and rank multiple offers
+  /job-os offre    → Evaluation only A-F (no auto PDF)
+  /job-os offres   → Compare and rank multiple offers
   /job-os contacto  → LinkedIn power move: find contacts + draft message
   /job-os deep      → Deep research prompt about company
   /job-os pdf       → PDF only, ATS-optimized CV
@@ -76,7 +76,7 @@ After determining the mode, load the necessary files before executing:
 ### Modes that require `_shared.md` + their mode file:
 Read `modes/_shared.md` + `modes/{mode}.md`
 
-Applies to: `auto-pipeline`, `oferta`, `ofertas`, `pdf`, `contacto`, `apply`, `pipeline`, `scan`, `batch`
+Applies to: `auto-pipeline`, `offre`, `offres`, `pdf`, `contacto`, `apply`, `pipeline`, `scan`, `batch`
 
 ### Standalone modes (only their mode file):
 Read `modes/{mode}.md`

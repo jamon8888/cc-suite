@@ -29,7 +29,7 @@ batch/
   batch-state.tsv               # Progreso (auto-generado, gitignored)
   batch-runner.sh               # Script orquestador standalone
   batch-prompt.md               # Prompt template para workers
-  logs/                         # Un log por oferta (gitignored)
+  logs/                         # Un log por offre (gitignored)
   tracker-additions/            # Líneas de tracker (gitignored)
 ```
 
@@ -39,19 +39,19 @@ batch/
 2. **Navegar portal**: Chrome → URL de búsqueda
 3. **Extraer URLs**: Leer DOM de resultados → extraer lista de URLs → append a `batch-input.tsv`
 4. **Para cada URL pendiente**:
-   a. Chrome: click en la oferta → leer JD text del DOM
+   a. Chrome: click en la offre → leer JD text del DOM
    b. Guardar JD a `/tmp/batch-jd-{id}.txt`
    c. Calcular siguiente REPORT_NUM secuencial
    d. Ejecutar via Bash:
       ```bash
       claude -p --dangerously-skip-permissions \
         --append-system-prompt-file batch/batch-prompt.md \
-        "Procesa esta oferta. URL: {url}. JD: /tmp/batch-jd-{id}.txt. Report: {num}. ID: {id}"
+        "Procesa esta offre. URL: {url}. JD: /tmp/batch-jd-{id}.txt. Report: {num}. ID: {id}"
       ```
    e. Actualizar `batch-state.tsv` (completed/failed + score + report_num)
    f. Log a `logs/{report_num}-{id}.log`
-   g. Chrome: volver atrás → siguiente oferta
-5. **Paginación**: Si no hay más ofertas → click "Next" → repetir
+   g. Chrome: volver atrás → siguiente offre
+5. **Paginación**: Si no hay más offres → click "Next" → repetir
 6. **Fin**: Merge `tracker-additions/` → `applications.md` + resumen
 
 ## Modo B: Script standalone
@@ -65,7 +65,7 @@ Opciones:
 - `--retry-failed` — solo reintenta fallidas
 - `--start-from N` — empieza desde ID N
 - `--parallel N` — N workers en paralelo
-- `--max-retries N` — intentos por oferta (default: 2)
+- `--max-retries N` — intentos por offre (default: 2)
 
 ## Formato batch-state.tsv
 
@@ -80,7 +80,7 @@ id	url	status	started_at	completed_at	report_num	score	error	retries
 
 - Si muere → re-ejecutar → lee `batch-state.tsv` → skip completadas
 - Lock file (`batch-runner.pid`) previene ejecución doble
-- Cada worker es independiente: fallo en oferta #47 no afecta a las demás
+- Cada worker es independiente: fallo en offre #47 no afecta a las demás
 
 ## Workers (claude -p)
 

@@ -1,6 +1,6 @@
 # Modo: scan — Portal Scanner (Descubrimiento de Ofertas)
 
-Escanea portales de empleo configurados, filtra por relevancia de título, y añade nuevas ofertas al pipeline para evaluación posterior.
+Escanea portales de empleo configurados, filtra por relevancia de título, y añade nuevas offres al pipeline para evaluación posterior.
 
 ## Ejecución recomendada
 
@@ -28,7 +28,7 @@ Leer `portals.yml` que contiene:
 **Para cada empresa en `tracked_companies`:** Navegar a su `careers_url` con Playwright (`browser_navigate` + `browser_snapshot`), leer TODOS los job listings visibles, y extraer título + URL de cada uno. Este es el método más fiable porque:
 - Ve la página en tiempo real (no resultados cacheados de Google)
 - Funciona con SPAs (Ashby, Lever, Workday)
-- Detecta ofertas nuevas al instante
+- Detecta offres nuevas al instante
 - No depende de la indexación de Google
 
 **Cada empresa DEBE tener `careers_url` en portals.yml.** Si no la tiene, buscarla una vez, guardarla, y usar en futuros scans.
@@ -40,7 +40,7 @@ Para empresas con API pública o feed estructurado, usar la respuesta JSON/XML c
 **Soporte actual (variables entre `{}`):**
 - **Greenhouse**: `https://boards-api.greenhouse.io/v1/boards/{company}/jobs`
 - **Ashby**: `https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobBoardWithTeams`
-- **BambooHR**: lista `https://{company}.bamboohr.com/careers/list`; detalle de una oferta `https://{company}.bamboohr.com/careers/{id}/detail`
+- **BambooHR**: lista `https://{company}.bamboohr.com/careers/list`; detalle de una offre `https://{company}.bamboohr.com/careers/{id}/detail`
 - **Lever**: `https://api.lever.co/v0/postings/{company}?mode=json`
 - **Teamtailor**: `https://{company}.teamtailor.com/jobs.rss`
 - **Workday**: `https://{company}.{shard}.myworkdayjobs.com/wday/cxs/{company}/{site}/jobs`
@@ -114,7 +114,7 @@ Los niveles son aditivos — se ejecutan todos, los resultados se mezclan y dedu
 
 7.5. **Verificar liveness de resultados de WebSearch (Nivel 3)** — ANTES de añadir a pipeline:
 
-   Los resultados de WebSearch pueden estar desactualizados (Google cachea resultados durante semanas o meses). Para evitar evaluar ofertas expiradas, verificar con Playwright cada URL nueva que provenga del Nivel 3. Los Niveles 1 y 2 son inherentemente en tiempo real y no requieren esta verificación.
+   Los resultados de WebSearch pueden estar desactualizados (Google cachea resultados durante semanas o meses). Para evitar evaluar offres expiradas, verificar con Playwright cada URL nueva que provenga del Nivel 3. Los Niveles 1 y 2 son inherentemente en tiempo real y no requieren esta verificación.
 
    Para cada URL nueva de Nivel 3 (secuencial — NUNCA Playwright en paralelo):
    a. `browser_navigate` a la URL
@@ -122,7 +122,7 @@ Los niveles son aditivos — se ejecutan todos, los resultados se mezclan y dedu
    c. Clasificar:
       - **Activa**: título del puesto visible + descripción del rol + control visible de Apply/Submit/Solicitar dentro del contenido principal. No contar texto genérico de header/navbar/footer.
       - **Expirada** (cualquiera de estas señales):
-        - URL final contiene `?error=true` (Greenhouse redirige así cuando la oferta está cerrada)
+        - URL final contiene `?error=true` (Greenhouse redirige así cuando la offre está cerrada)
         - Página contiene: "job no longer available" / "no longer open" / "position has been filled" / "this job has expired" / "page not found"
         - Solo navbar y footer visibles, sin contenido JD (contenido < ~300 chars)
    d. Si expirada: registrar en `scan-history.tsv` con status `skipped_expired` y descartar
@@ -130,7 +130,7 @@ Los niveles son aditivos — se ejecutan todos, los resultados se mezclan y dedu
 
    **No interrumpir el scan entero si una URL falla.** Si `browser_navigate` da error (timeout, 403, etc.), marcar como `skipped_expired` y continuar con la siguiente.
 
-8. **Para cada oferta nueva verificada que pase filtros**:
+8. **Para cada offre nueva verificada que pase filtros**:
    a. Añadir a `pipeline.md` sección "Pendientes": `- [ ] {url} | {company} | {title}`
    b. Registrar en `scan-history.tsv`: `{url}\t{date}\t{query_name}\t{title}\t{company}\tadded`
 
@@ -182,12 +182,12 @@ Nuevas añadidas a pipeline.md: N
   + {company} | {title} | {query_name}
   ...
 
-→ Ejecuta /job-os pipeline para evaluar las nuevas ofertas.
+→ Ejecuta /job-os pipeline para evaluar las nuevas offres.
 ```
 
 ## Gestión de careers_url
 
-Cada empresa en `tracked_companies` debe tener `careers_url` — la URL directa a su página de ofertas. Esto evita buscarlo cada vez.
+Cada empresa en `tracked_companies` debe tener `careers_url` — la URL directa a su página de offres. Esto evita buscarlo cada vez.
 
 **Patrones conocidos por plataforma:**
 - **Ashby:** `https://jobs.ashbyhq.com/{slug}`

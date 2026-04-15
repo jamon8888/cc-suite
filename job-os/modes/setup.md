@@ -465,7 +465,7 @@ All checks passed. job-os is ready.
 Next steps:
   /job-os scan       → discover new offers
   /job-os pipeline   → evaluate pending offers
-  /job-os oferta     → evaluate a single offer (paste URL or JD)
+  /job-os offre     → evaluate a single offer (paste URL or JD)
 ```
 
 If any check fails, show the specific fix needed and offer to resolve it inline.

@@ -1,6 +1,6 @@
 # Modo: apply — Asistente de Aplicación en Vivo
 
-Modo interactivo para cuando el candidato está rellenando un formulario de aplicación en Chrome. Lee lo que hay en pantalla, carga el contexto previo de la oferta, y genera respuestas personalizadas para cada pregunta del formulario.
+Modo interactivo para cuando el candidato está rellenando un formulario de aplicación en Chrome. Lee lo que hay en pantalla, carga el contexto previo de la offre, y genera respuestas personalizadas para cada pregunta del formulario.
 
 ## Requisitos
 
@@ -20,7 +20,7 @@ Modo interactivo para cuando el candidato está rellenando un formulario de apli
 8. PRESENTAR   → Mostrar respuestas formateadas para copy-paste
 ```
 
-## Paso 1 — Detectar la oferta
+## Paso 1 — Detectar la offre
 
 **Con Playwright:** Tomar snapshot de la página activa. Leer título, URL, y contenido visible.
 

@@ -1,6 +1,6 @@
 # Modo: pipeline — Inbox de URLs (Second Brain)
 
-Procesa URLs de ofertas acumuladas en `data/pipeline.md`. El usuario agrega URLs cuando quiera y luego ejecuta `/job-os pipeline` para procesarlas todas.
+Procesa URLs de offres acumuladas en `data/pipeline.md`. El usuario agrega URLs cuando quiera y luego ejecuta `/job-os pipeline` para procesarlas todas.
 
 ## Workflow
 

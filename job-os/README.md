@@ -69,8 +69,8 @@ L'assistant se relance à tout moment via `/job-os setup` pour ajouter un track 
 /job-os {URL ou texte}      Auto-pipeline : évaluation + PDF + tracker
 /job-os scan                Scanner les portails pour de nouvelles offres
 /job-os pipeline            Traiter les URLs en attente (data/pipeline.md)
-/job-os oferta              Évaluer une seule offre (A-F)
-/job-os ofertas             Comparer et classer plusieurs offres
+/job-os offre              Évaluer une seule offre (A-F)
+/job-os offres             Comparer et classer plusieurs offres
 /job-os pdf                 Générer un CV PDF optimisé ATS
 /job-os apply               Remplir un formulaire de candidature avec l'IA
 /job-os tracker             Tableau de bord des candidatures

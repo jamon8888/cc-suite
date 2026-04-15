@@ -1,4 +1,4 @@
-# Modo: ofertas — Comparación Multi-Oferta
+# Modo: offres — Comparación Multi-Oferta
 
 Scoring matrix de 10 dimensiones ponderadas:
 
@@ -12,10 +12,10 @@ Scoring matrix de 10 dimensiones ponderadas:
 | Calidad remoto | 5% | 5=full remote async, 1=onsite only |
 | Reputación empresa | 5% | 5=top employer, 1=red flags |
 | Modernidad tech stack | 5% | 5=cutting edge AI/ML, 1=legacy |
-| Velocidad a oferta | 5% | 5=fast process, 1=6+ months |
+| Velocidad a offre | 5% | 5=fast process, 1=6+ months |
 | Señales culturales | 5% | 5=builder culture, 1=bureaucratic |
 
-Para cada oferta: score en cada dimensión, score ponderado total.
+Para cada offre: score en cada dimensión, score ponderado total.
 Ranking final + recomendación con consideraciones de time-to-offer.
 
-Pedir al usuario las ofertas si no están en contexto. Puede ser texto, URLs, o referencias a ofertas ya evaluadas en el tracker.
+Pedir al usuario las offres si no están en contexto. Puede ser texto, URLs, o referencias a offres ya evaluadas en el tracker.
