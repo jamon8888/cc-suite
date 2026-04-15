@@ -16,27 +16,52 @@ Ce n'est pas un outil pour postuler en masse. C'est un filtre : il vous aide à 
 
 ## Prérequis
 
-- Node.js 18+
-- Claude Code ou OpenCode
-- Playwright — pour la génération PDF, le scraping et l'automatisation navigateur
+- [Node.js 18+](https://nodejs.org)
+- [Claude Code](https://claude.ai/code) ou [OpenCode](https://opencode.ai)
+- Google Chrome installé sur votre machine
 
 ---
 
 ## Installation
 
-```bash
-# Cloner le dépôt
-git clone https://github.com/jamon8888/cc-suite.git
-cd cc-suite/job-os
+### Option A — Laissez Claude installer pour vous (recommandé)
 
-# Installer les dépendances
+C'est la méthode la plus simple. Vous n'avez pas besoin de connaître la ligne de commande.
+
+**1. Téléchargez le projet**
+
+Téléchargez le ZIP depuis GitHub → extrayez-le → ouvrez le dossier `job-os` dans Claude Code :
+
+```
+File → Open Folder → sélectionner le dossier job-os
+```
+
+**2. Collez ce prompt dans Claude Code et envoyez**
+
+```
+Installe job-os pour moi. Voici ce que tu dois faire dans l'ordre :
+
+1. Vérifie que Node.js est installé (`node --version`). Si ce n'est pas le cas, dis-le moi.
+2. Installe les dépendances npm (`npm install`)
+3. Installe le navigateur Playwright (`npx playwright install chromium`)
+4. Installe le plugin anti-détection (`npm install playwright-extra playwright-extra-plugin-stealth`)
+5. Lance le diagnostic (`npm run doctor`) et corrige les éventuels problèmes
+6. Lance l'assistant de configuration (`/job-os setup`) pour me guider dans la configuration
+
+Ne saute aucune étape. Dis-moi à chaque fois ce que tu fais et si quelque chose échoue.
+```
+
+Claude exécute tout, corrige les erreurs au fil de l'eau, puis lance directement l'assistant de configuration.
+
+---
+
+### Option B — Installation manuelle
+
+```bash
+# Dans le dossier job-os
 npm install
 npx playwright install chromium
-
-# (Optionnel) Plugin anti-détection pour le scan de portails
 npm install playwright-extra playwright-extra-plugin-stealth
-
-# Vérifier que tout est en ordre
 npm run doctor
 ```
 
